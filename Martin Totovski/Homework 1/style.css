@@ -1,0 +1,55 @@
+body {
+    padding: 15px 80px 50px 70px;
+    background-color: lightgrey;
+    color: black;
+}
+
+.navigationBar {
+    background-color: dimgray;
+    position: fixed;
+    top: 0;
+    padding-right: 930px;
+}
+
+.navigationBar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+#welcome1 {
+    padding-top: 20px;
+}
+
+#soon {
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+#firstUl {
+    font-family: cursive;
+    background-color: lightgrey;
+    list-style-image: url('check.png');
+    list-style-position: inside;
+}
+
+p {
+    font-size: 25px;
+}
+
+blockquote {
+    font-style: italic;
+    padding-right: 500px;
+}
+
+#footerP {
+    text-align: center;
+    font-size: 15px;
+}
+
+#html5img {
+    height: 250px;
+    padding-left: 40px;
+}
