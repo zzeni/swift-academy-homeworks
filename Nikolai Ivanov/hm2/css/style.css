@@ -1,0 +1,63 @@
+body {
+    padding-bottom: 500px;
+}
+
+header {
+    margin: 22px;
+}
+
+nav {
+    background-color: orange;
+}
+
+button {
+    background-color: deepskyblue;
+    width: auto;
+    height: 30px;
+}
+
+li {
+    text-decoration-color: white;
+    display: inline;
+
+}
+
+article {
+    background-color: lightskyblue;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+}
+
+figure {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+hr {
+    padding-bottom: 10px;
+    background-color: blue
+}
+
+main {
+    background-color: orange;
+}
+
+footer,
+main,
+article,
+figure,
+body,
+manutdphoto {
+    padding: 25px;
+    margin: 22.7px;
+
+}
+
+nav {
+    padding: 5px;
+    margin: 22.7px;
+}
