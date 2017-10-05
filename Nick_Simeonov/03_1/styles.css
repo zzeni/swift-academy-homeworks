@@ -1,0 +1,67 @@
+body {
+	background-color: rgba(0, 0, 255, 0.42);
+
+}
+
+nav {
+	align-self: 180px;
+	line-height: 1px;
+}
+
+div {
+	display: inline-block;
+	margin-left: 5px;
+	background-color: rgba(253, 253, 253, 0.54);
+	border-radius: 25px;
+
+	border: solid #302d58;
+
+}
+
+h1 {
+	text-align: center;
+	color: rgb(132, 31, 96);
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.8vw;
+}
+
+h4 {
+	color: rgb(101, 12, 68);
+	font-style: oblique, inherit;
+	font-size: 1.2em;
+	margin: 10px;
+
+}
+
+p {
+	text-align: justify;
+	margin: 10px;
+	font-style: oblique, inherit;
+	;
+}
+
+navigation {
+	background-color: grey;
+	width: 70px;
+}
+
+
+a {
+	text-decoration: none;
+	color: #9b157c;
+}
+
+a:visited {
+	color: #9b157c;
+}
+
+img {
+	border: solid grey;
+	display: block;
+	max-width: 2vw;
+	max-height: 95px;
+	width: auto;
+	height: auto;
+	border-radius: 15px;
+}
