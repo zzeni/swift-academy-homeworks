@@ -1,0 +1,95 @@
+h1 {
+    text-align: center;
+    color: darkmagenta;
+}
+
+
+table {
+    width: 600PX;
+    height: 200PX;
+}
+
+td {
+    border: 2px solid;
+    border-color: darkgreen;
+    border-bottom-left-radius: 15px;
+    background-color: bisque;
+    width: 33%;
+    height: 33%;
+    text-align: center;
+}
+
+body {
+    background-color: palegreen;
+    color: firebrick;
+}
+
+#kryg {
+    border-radius: 100%;
+}
+
+#avatar {
+    border-radius: 100%;
+    height: 32%;
+}
+
+.piclink {
+    border-radius: 100%;
+    height: 50px;
+}
+
+header {
+    background-color: chartreuse;
+    border-radius: 20px;
+    border: 5px solid;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+nav {
+    background-color: yellowgreen;
+    width: 30%;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+main {
+    background-color: yellowgreen;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+
+#logo_cat {
+    border-radius: 20%;
+    width: 100px;
+}
+
+.menu_pic {
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+
+}
+article {
+    padding: 20px;
+    border-radius: 20px;
+  background-color: greenyellow;
+        box-shadow: 10px 10px 5px #888888;
+
+}
+footer{
+    background-color: yellowgreen;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+    text-align: center;
+}
