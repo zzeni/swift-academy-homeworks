@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: indianred;
+    border-bottom: 3px solid black;
+}
+
+header h1 {
+    padding: 25px 75px;
+    position: relative;
+    font-family: cursive;
+    font-size: 3em;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+    position: absolute;
+    top: 145px;
+    right: 0px;
+    font-family: sans-serif;
+}
+
+header nav div {
+    width: 150px;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: white;
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.left {
+    background-color: lightskyblue;
+    border-right: 3px solid black;
+}
+
+.left div {
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    background-color: indianred;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0px 3px 1px grey;
+    font-family: cursive;
+}
+
+.left div a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.right {
+    background-color: whitesmoke;
+    flex-grow: 1;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.right article {
+    padding: 25px;
+    border: 2px solid blue;
+    box-shadow: 2px 3px 1px grey;
+    border-radius: 10px;
+    text-align: justify;
+    margin: 50px auto;
+    overflow: auto;
+    font-family: sans-serif;
+    line-height: 1.5em;
+}
+
+.right img {
+    width: 200px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.right hr {
+    border: 1px solid black;
+
+}
+
+.right footer {
+    text-align: center;
+    padding: 20px;
+}
