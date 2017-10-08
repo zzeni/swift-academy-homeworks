@@ -35,31 +35,45 @@ header {
     box-shadow: 10px 10px 5px #888888;
 }
 
-ul, nav a {
+ul,
+nav a {
     display: block;
     color: yellow;
     padding: 10px;
     text-align: center;
     list-style-type: none;
     border-radius: 20px;
+    align-self: center;
+    
+}
+
+ul {
+    margin:50px;
+    margin-top: 20px;
+    
+
 }
 
 li {
     border-radius: 20px;
     display: inline-block;
     box-shadow: 10px 10px 5px #888888;
+    float:left;
 }
 
-#navlink1{
+#navlink1 {
     background-color: midnightblue;
 }
-#navlink2{
+
+#navlink2 {
     background-color: darkred;
 }
-#navlink3{
+
+#navlink3 {
     background-color: dimgray;
 }
-#navlink4{
+
+#navlink4 {
     background-color: darkgreen;
 }
 
