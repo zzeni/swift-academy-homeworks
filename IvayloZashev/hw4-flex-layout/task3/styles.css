@@ -24,12 +24,12 @@ footer {
     background-color: aquamarine;
     width: 100%;
     text-align: center;
+    padding: 0;
 }
 
 nav ul li div a {
     text-decoration: none;
     color: black;
-
 }
 
 nav ul li {
@@ -42,6 +42,7 @@ nav ul li {
 
 nav ul {
     list-style-type: none;
+    padding: 10px;
 }
 
 header {
@@ -55,15 +56,13 @@ header {
 }
 
 header {
-    height: 101px;
-    width: 100%;
+    height: 100px;
     position: relative;
-    padding: 10px 10px 0;
 }
 
 #hl-navigation {
     position: absolute;
-    right: 0;
+    right: 10px;
     bottom: 0;
     float: right;
 }
@@ -90,17 +89,12 @@ header {
     margin: 2px;
 }
 
-article p {
-    padding: 10px;
-    height: 50px;
+article {
     margin: 20px;
+    background-color: burlywood;
 }
 
-#photo-div {
-    margin: 20px;
-}
-
-#links-div ul {
+article p,
+article img{
     display: inline;
 }
-
