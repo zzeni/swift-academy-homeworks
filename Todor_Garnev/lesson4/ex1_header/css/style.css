@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: darkorange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+header img {
+    width: 40px;
+}
