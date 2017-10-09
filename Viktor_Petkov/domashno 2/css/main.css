@@ -1,0 +1,33 @@
+ul, li {
+    display: inline;
+    font-size: 120%;
+    align-content: center
+}
+body {
+    background-color: darkgoldenrod
+}
+header {
+    background-color: #a4b9d1
+}
+footer {
+    font-size: 150%;
+    text-align: center;
+    background-color: antiquewhite
+}
+nav {
+    background-color: #727d88
+}
+
+h2 {
+    background-color: #ffffff
+}
+
+p {
+    background-color:forestgreen
+}
+section {
+    background-color: #344b39
+}
+article {
+    background-color: dodgerblue
+}
