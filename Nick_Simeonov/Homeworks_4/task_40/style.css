@@ -1,0 +1,9 @@
+p {
+	color: #ffff00;
+	width: 500px;
+	margin-left: 0 50px;
+	padding: 30px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6c/Pavement_Sarlat.jpg);
+	font-size: 1.8em;
+	text-align: justify;
+}
