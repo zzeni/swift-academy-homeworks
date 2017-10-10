@@ -1,0 +1,24 @@
+#flex-container {
+	display: flex;
+	width: 450px;
+	justify-content: space-between;
+	background-color: rgba(237, 188, 26, 0.78);
+
+}
+
+h1 {
+	font-family: cursive;
+	font-size: 1.5em;
+
+}
+
+img {
+	width: 40px;
+	height: 40px;
+
+}
+
+.elements {
+	margin: 7px;
+	padding-top: 3px;
+}
