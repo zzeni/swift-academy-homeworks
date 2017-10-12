@@ -1,0 +1,17 @@
+body {
+    background: #8F8FDD;
+}
+#header {
+    background: pink;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1px;
+}
+ h1 {
+    background: yellow;
+    border: 1px dashed black;
+    width: 40%;
+    margin: 100px;
+    padding: 50px;
+    text-align: center;
+}

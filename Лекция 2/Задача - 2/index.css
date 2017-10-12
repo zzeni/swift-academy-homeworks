@@ -1,0 +1,23 @@
+header {
+    background:pink;
+    height: 50px;
+}
+header ul, aside ul {
+    list-style-type: none
+}
+header ul li {
+    float: left;
+    margin: 10px;
+}
+#maui{
+    background: pink;
+}
+#turtle {
+    background: purple;
+}
+#dubai {
+    background: pink;
+}
+#sofia {
+    background: purple;
+}
