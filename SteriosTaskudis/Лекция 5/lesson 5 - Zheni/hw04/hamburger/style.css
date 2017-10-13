@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  background-color: orange;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 10px;
+  height: 1.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+img {
+  width: 40px
+}

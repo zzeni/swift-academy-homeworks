@@ -1,0 +1,78 @@
+header {
+    background: #cd6d61;
+    display: flex;
+    border-bottom: 2px solid #535353;
+    justify-content: space-between;
+}
+header a.logo {
+    text-decoration: none;
+    color:whitesmoke;
+    font-size:30px;
+    padding: 30px;
+}
+main {
+    display: flex;
+}
+aside {
+    background: #85bfe9;
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    border-right: 2px solid #535353;
+}
+aside a {
+    display: block;
+    text-decoration: none;
+    background-color: #cd6d61;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 70px;
+    margin: 10px auto;
+    text-align: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 75%;
+}
+nav {
+    align-self: flex-end;
+    margin-right: 25px;
+}
+nav a {
+    border-radius:5px;
+    border:2px solid #0760c4;
+    background: white;
+    color: #7db4e3;
+    padding: 15px;
+    text-decoration: none;
+}
+article {
+    border : 2px solid #0760c4;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+article img {
+    float: left;
+    margin: 0px 10px 10px 0px;
+}
+article ul {
+    display: flex;
+    justify-content: center;
+}
+article ul li {
+    margin-right: 30px;
+}
+article ul li a {
+    color: #77b0e2;
+    text-decoration: none;
+}
+footer p {
+    text-align: center;
+}
+
