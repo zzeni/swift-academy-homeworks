@@ -1,0 +1,158 @@
+﻿* {
+	box-sizing: border-box;
+	font-family: sans-serif
+}
+
+#container0 {
+	display: flex;
+	width: 900px;
+	height: 600px;
+
+	margin-top: 45px;
+	margin-left: 300px;
+	flex-direction: column;
+	border-bottom: gray solid 1px;
+}
+
+#top_section {
+	background-color: rgba(172, 167, 167, 0.86);
+	border-bottom: solid black 2px;
+
+}
+
+header {
+	flex-direction: column;
+
+}
+
+#nav_0 {
+	position: relative;
+	top: 35px;
+	right: -525px;
+	text-decoration: none;
+}
+
+#nav_1 {
+	position: relative;
+	top: 75px;
+	left: -5px;
+	text-decoration: none;
+}
+
+#nav_2 {
+	position: relative;
+	bottom: 125px;
+	left: 13px;
+	text-decoration: none;text-align: center
+}
+
+ul {
+	list-style: none;
+}
+
+.li_0 {
+	font-size: 20px;
+	margin-right: 15px;
+	display: inline-block;
+	height: 38px;
+	width: 90px;
+	border: solid black 2px;
+	border-radius: 26px;
+	background-color: rgb(207, 239, 252);
+	text-align: center;
+	padding-top: 6px;
+	color: #5959f5;
+}
+
+.li_1 {
+	font-size: 20px;
+	height: 38px;
+	width: 150px;
+	margin-bottom: 30px;
+	border: solid black 2px;
+	border-radius: 26px;
+	background-color: rgba(216, 209, 209, 0.86);
+	text-align: center;
+	padding-top: 6px;
+	color: #49494b;
+}
+
+.li_2 {
+	font-size: 15px;
+	margin-right: 70px;
+
+	display: inline-block;
+	text-align: center;
+	color: #5959f5;
+}
+
+
+
+h1 {
+	color: #ffffff;
+	font-size: 2.2em;
+	padding-left: 20px;
+	;
+}
+
+#container1 {
+	display: flex;
+
+	flex-grow: 1;
+}
+
+#left {
+
+	width: 25%;
+	flex-grow: 1;
+	border-right: solid black 2px;
+	background-color: rgba(173, 216, 230, 0.81);
+}
+
+#content {
+	display: flex;
+	width: 75%;
+	flex-grow: 1;
+	flex-direction: column;
+	margin: 7px;
+	padding: 5px;
+}
+
+#article {
+
+	flex-direction: column;
+	flex-grow: 1;
+	border: solid blue 1px;
+	border-radius: 25px;
+	margin: 15px;
+	padding: 15px;
+}
+
+#footer {
+	height: 20px;
+	border-top: solid black 2px;
+}
+
+#fufu {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+img {
+	float: left;
+	width: 100px;
+	margin-right: 14px;
+	border: solid blue 1px;
+	border-radius: 7px;
+}
+
+.img2 {
+	border: none;
+	width: 30px;
+	margin-right: 14px;
+
+}
+
+p {
+	text-align: justify;
+}
