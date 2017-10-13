@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ccc;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+header {
+    display: inline-block;
+    width: 1200px;
+    height: 90px;
+    flex-direction: row;
+    background-color: #fc9462;
+
+}
+
+h1 {
+    display: inline-block;
+    padding: 5px;
+}
+
+#header_image {
+    display: inline-block;
+    height: auto;
+    width: 30px;
+    float: right;
+    position: absolute;
+    top: 30px;
+    left: 1500px;
+}
+
+#vector {
+    width: 50% height:auto;
+}
+
+div {
+    background-color: #cdaf95;
+}
+
+#footer_text {
+
+    background-color: #ffefd5;
+    text-align: center;
+}
