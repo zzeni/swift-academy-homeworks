@@ -28,6 +28,7 @@
 .row-2 {
     display: flex;
     flex-grow: 1;
+    flex-basis: 75%;
 }
 .red {
     background:#D56A6C;
