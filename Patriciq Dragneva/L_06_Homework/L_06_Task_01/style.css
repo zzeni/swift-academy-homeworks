@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+
+form > div {
+    padding:10px;
+}
+
+
+form label {
+    width: 160px;
+    display:inline-block;
+    text-align: left;
+}
+
+
+textarea{
+    resize:none;
+    vertical-align: top;
+}
+
+#buttons{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
