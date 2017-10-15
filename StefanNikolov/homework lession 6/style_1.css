@@ -1,0 +1,25 @@
+*{
+box-sizing: border-box;
+}
+form {
+    border: solid 1px black;
+    padding: 5px;
+}
+
+form label {
+    margin: 5px;
+    width: 110px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+form input, form select, button {
+    margin: 5px;
+}
+
+#textarea{
+    margin: 5px;
+    width: 230px;
+    height: 150px;
+}

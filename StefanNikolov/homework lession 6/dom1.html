@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style_1.css">
+</head>
+
+<body>
+
+    <h1>задача 1 - no responsive form :D</h1>
+
+
+    <form method="post">
+        <div><label for="username">Вашите имена:</label> <input type="text" name="username" id="username" placeholder="Име Фамилия">
+        </div>
+        <div>
+            <label for="email">e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+        </div>
+        <div>
+            <label for="language">език:</label>
+            <select name="language" required>
+            <option style="display:none" value="" selected>Изберете език</option>
+              <option value="bg">Български</option>
+              <option value="en">English</option>
+              <option value="gr">Deutsch</option>
+              <option value="ch">中國</option>
+              <option value="hindi">हिन्दी</option>
+              <option value="ivrit">עברית</option>
+          </select>
+        </div>
+        <div>
+            <label for="mobile">телефон:</label>
+            <input type="tel" name="moobile" id="mobile" placeholder="+359 xxx xxx xxx" required>
+        </div>
+        <div>
+            <label for="text">запитване:</label>
+            <textarea id="textarea" name="textarea" placeholder="нямате запитване?">Опишете вашето запитване тук</textarea>
+        </div>
+        <div id="buttons">
+            <label></label><button type="submit">Изпрати</button>
+            <button type="reset" value="Reset">Изчисти</button>
+        </div>
+    </form>
+
+
+
+</body>
+</html>
