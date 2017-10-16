@@ -1,0 +1,10 @@
+form > div {
+
+    padding: 10px;
+}
+
+form label {
+    width: 160px;
+    display: inline-block;
+    text-align: right;
+}
