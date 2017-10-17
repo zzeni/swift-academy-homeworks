@@ -1,0 +1,20 @@
+form > div {
+    
+    background-color: dodgerblue;
+    
+}
+
+form label {
+    
+    width:120px;
+    display:inline-block;
+    text-align: right;
+}
+
+label[for=accept-box] {
+    display: inline;
+}
+
+input, textarea, select {
+    margin: 10px;
+}
