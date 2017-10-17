@@ -1,0 +1,159 @@
+/* HINT: Use just A Colour Picker to get the colors */
+
+@media (max-width: 459px) {
+    body {
+        background-color: #FAF0E6;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .circle {
+        background-color: #7C8500;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: white;
+        font-family: fantasy "Chalkduster";
+        margin: auto;
+
+    }
+
+    .xs-only p {
+        text-transform: uppercase;
+
+
+    }
+
+    .xs-only {
+        padding: 50px;
+    }
+
+    .sm-only,
+    .md-only,
+    .lg-only {
+        display: none;
+    }
+
+}
+
+@media (min-width: 460px) and (max-width:679px) {
+
+    body {
+        background-color: #EF875E;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .circle {
+        background-color: #699BEA;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: white;
+        font-family: fantasy "Chalkduster";
+        margin: auto;
+
+    }
+
+    .sm-only p {
+        text-transform: uppercase;
+
+
+    }
+
+    .sm-only {
+        padding: 50px;
+    }
+
+    .xs-only,
+    .md-only,
+    .lg-only {
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 680px) and (max-width: 999px) {
+
+    body {
+        background-color: #FFF7DD;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .circle {
+        background-color: #4A8422;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: white;
+        font-family: fantasy "Chalkduster";
+        margin: auto;
+
+    }
+
+    .md-only p {
+        text-transform: uppercase;
+
+    }
+    
+
+    .md-only {
+        padding: 50px;
+    }
+
+    .xs-only,
+    .sm-only,
+    .lg-only {
+        display: none;
+    }
+}
+
+}
+
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+
+    body {
+        background-color: #FFF7DD;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .circle {
+        background-color: #4A8422;
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: white;
+        font-family: fantasy "Chalkduster";
+        margin: auto;
+
+    }
+
+    .md-only p {
+        text-transform: uppercase;
+
+    }
+    
+
+    .md-only {
+        padding: 50px;
+    }
+
+    .xs-only,
+    .sm-only,
+    .lg-only {
+        display: none;
+    }
+}
