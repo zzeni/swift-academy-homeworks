@@ -1,0 +1,169 @@
+/* HINT: Use just A Colour Picker to get the colors */
+
+body {
+    background-color: rgb(243, 254, 254);
+    height: 100vh;
+    width: 100vw;
+}
+
+.circle {
+    background-color: #7C8500;
+}
+
+.xs-only,
+.sm-only,
+.md-only,
+.lg-only {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(180, 85%, 98%);
+
+
+    }
+    .lg-only {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .circle {
+        background: hsl(331, 77%, 61%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+
+    }
+    p,
+    small {
+        font-family: fantasy;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 2em;
+
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width:999px) {
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(180, 85%, 98%);
+
+
+    }
+
+
+    .circle {
+        background: hsl(96, 59%, 33%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+
+    }
+    p,
+    small {
+        font-family: fantasy;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 2em;
+
+    }
+    .md-only {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+}
+@media only screen and (min-width: 460px) and (max-width:679px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(239, 135, 94);
+
+    }
+
+    .sm-only{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .circle {
+        background: hsl(217, 75%, 67%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    p,
+    small {
+        font-family: fantasy;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 2em;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width: 459px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(30, 60%, 94%);
+
+    }
+
+    .xs-only{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .circle {
+        background: hsl(57, 73%, 29%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    p,
+    small {
+        font-family: fantasy;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 2em;
+
+    }
+}

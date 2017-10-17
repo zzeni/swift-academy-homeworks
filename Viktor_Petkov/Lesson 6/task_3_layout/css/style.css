@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: gray;
+    margin: 0 auto;
+
+}
+
+.mainwrapper {
+    width: 90vw;
+    margin: auto;
+}
+
+
+header {
+    border: solid purple;
+    padding: 25px;
+    background: lightblue;
+}
+
+.header {
+    font-size: 5em;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    border: solid green;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #F8FB90;
+    margin: 0px;
+    width: 12%;
+
+}
+
+.right {
+    border: solid white;
+    margin: 0px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    width: 1000px;
+    background: #FAFAFA;
+}
+
+h2,
+h1,
+p {
+    font-size: 2em;
+    color: black;
+    margin: 20px;
+}
+
+li {
+    font-size: 2em;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0c5167;
+    color: white;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+
+        width: auto;
+    }
+    .right {
+        width: auto;
+    }
+}
