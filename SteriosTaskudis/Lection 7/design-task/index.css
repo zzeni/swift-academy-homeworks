@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+    height: 100%;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 25%;
+    align-items: center;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li  {
+     float: left;
+    margin-left: 10px;
+   
+}
+header nav ul li a {
+     color : black;
+}
+.carousel {
+    background-image: url('images/header-bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    flex-basis: 50%;
+    height: 25%;
+    justify-content: center;
+}
+section  {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+section nav ul {
+    list-style-type: none;
+}
+section nav ul li {
+    float: left;
+    margin-left: 10px;
+}
+section nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cont a {
+    margin: 20px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color:#9c8f96;    
+    padding: 30px; 
+    margin-top:30px;
+}
+.soc {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 20px;
+}
+footer p {
+    padding:30px;
+}
+
+/* responsive */
+.ham {
+    display: none;
+    float: right;
+}
+@media (max-width:750px) {
+    .ham {
+        display: initial;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    header nav {
+        width: 100%;
+    }
+    header nav ul li {
+        float: initial;
+        border-bottom: 1px solid black;
+        text-align: center;
+
+    }
+    header nav ul li a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    header nav ul li:nth-child(1) {
+        border-top:1px solid grey;
+    }
+}
