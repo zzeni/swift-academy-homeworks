@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: cadetblue;
+    border: solid maroon;
+    width: auto;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-left: 35px;
+}
+
+#middle {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    display: flex;
+    background-color: maroon;
+    border: solid cadetblue;
+    width: 500px;
+    height: auto;
+    margin: 0px;
+    padding: 20px;
+    flex-direction: column;
+
+}
+
+#right {
+    display: flex;
+    background-color: cornsilk;
+    flex-direction: column;
+}
+
+h2,
+h3,
+h4,
+p {
+    margin: 20px;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+@media only screen and (max-width:600px) {
+    #middle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #left {
+        width: auto;
+    }
+
+    h4,
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #right {
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+    #left {
+        background-color: crimson;
+    }
+    #right {
+        background-color: gainsboro;
+    }
+}
