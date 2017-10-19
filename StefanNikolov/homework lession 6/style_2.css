@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDF7DE;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy, cursive;
+}
+
+p {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 70px auto -5px auto;
+/*MOZILLA не се справя при преноса на 2 думи с тире м/у тях - не намерих добро решение.*/
+}
+
+small {
+    font-size: 20px;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: #7E7B30;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+@media (max-width: 459px) {
+    .sm-only,
+    .md-only,
+    .lg-only {
+        display: none;
+    }
+}
+
+@media (min-width: 460px) and (max-width:679px) {
+
+    body {
+        background-color: #E8865F;
+    }
+    div {
+        background-color: #6C94CD;
+    }
+
+    .xs-only,
+    .md-only,
+    .lg-only {
+        display: none;
+    }
+
+}
+
+@media (min-width: 680px) and (max-width:999px) {
+
+    body {
+        background-color: #FDF7DE;
+    }
+    div {
+        background-color: #457D3A;
+    }
+
+    .xs-only,
+    .sm-only,
+    .lg-only {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: #F5FAFC;
+    }
+    div {
+        background-color: #D94D90;
+    }
+
+    .sm-only,
+    .md-only,
+    .xs-only {
+        display: none;
+    }
+    p {
+        margin-top: 50px;
+        margin-bottom: -5px;
+    }
+}
