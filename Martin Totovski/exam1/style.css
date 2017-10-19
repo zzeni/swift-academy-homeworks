@@ -1,0 +1,106 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    /*    border: 1px solid black;*/
+    width: 100%;
+    min-height: 600px;
+}
+
+.square {
+    color: white;
+    height: 200px;
+    width: 200px;
+}
+
+.red {
+    background-color: red;
+
+}
+
+.blue {
+    background-color: blue;
+
+}
+
+.green {
+    background-color: green;
+
+}
+
+.black {
+    background-color: black;
+
+}
+
+/* Smallest first (<399px) */
+
+@media screen and (max-width: 399px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .square{
+    }
+
+
+}
+
+@media screen and (min-width: 400px) and (max-width:800px) {
+    .red
+    .blue
+    .black
+    .green{
+        
+    }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    .red{
+        position: fixed;
+        top:0;
+        left: 0;
+    }
+    .blue{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .black{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+    .green{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    .container {}
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+    .container {}
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    .container {}
+}
+
+@media screen and (min-width: 800px) {
+    
+    .container {}
+}
+
+
+
+
