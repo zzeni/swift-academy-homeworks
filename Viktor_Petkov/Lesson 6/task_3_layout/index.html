@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sample homework of a junior web designer">
+    <meta name="keywords" content="HTML,CSS,Javascript">
+    <meta name="author" content="Viktor Petkov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random page</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+    </style>
+</head>
+
+<body>
+    <div class="mainwrapper">
+
+        <header>
+            <h1 class="header" name="header">Header</h1>
+        </header>
+        <div class="main">
+            <div class="left">
+                <h2>Side navigation:</h2>
+                <ul>
+                    <li><a href="#1">article1</a>
+                    </li>
+                    <li><a href="#2">article2</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <h1>Main Content</h1>
+                <br>
+                <article id="1">
+                    <h2>Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, fuga, minima deleniti totam a neque earum! Ipsam ipsum a voluptas cumque quo quibusdam aliquid inventore vitae provident, quidem hic laborum expedita! Tempore esse nobis totam, quasi voluptatum officiis praesentium laudantium dolores maxime harum, porro ea molestiae quas, corporis magni commodi laborum. Ad facere quo sapiente, quisquam unde dolores laborum nobis iure, culpa dolorum ratione temporibus a omnis fugit alias illum ipsa, repellat vel! Tempora nam similique expedita vitae cumque. Minus dignissimos vel qui, voluptates ab deserunt fuga velit, dolor facilis nemo. Perferendis, commodi aspernatur! Ducimus distinctio enim dolore quaerat</p>
+                </article>
+                <article id="2">
+                    <h2>Heading 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis commodi, odit amet optio alias quasi fugiat aspernatur. Vero blanditiis nemo suscipit, beatae excepturi eveniet nulla soluta ipsum amet corporis molestiae libero, itaque numquam laudantium sed in cum inventore, ea autem, doloribus ratione. Eos veniam iure ipsam repudiandae, quaerat sunt minima facere provident rerum. Tempore quasi saepe necessitatibus iure, sapiente et omnis facere enim quam magnam reprehenderit officiis, maxime quisquam eveniet odio ex corporis. Minima quis nisi libero, quaerat fugit vel tempora, illum at perspiciatis inventore qui repudiandae eius. Voluptate cupiditate sint odit molestiae illum qui alias deleniti similique veritatis ab.</p>
+                </article>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" href="#header">Top</button>
+    </div>
+
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Chrome, Safari and Opera
+            document.documentElement.scrollTop = 0; // For IE and Firefox
+        }
+    </script>
+</body>
+
+</html>
