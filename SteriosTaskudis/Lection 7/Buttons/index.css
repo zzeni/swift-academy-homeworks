@@ -20,7 +20,7 @@ header {
 header a {
     text-decoration: none;
 }
-.red ,.green, .yel ,.blue {
+.nav-circle {
     width: 120px;
     height: 120px;
     border-radius: 100%;
