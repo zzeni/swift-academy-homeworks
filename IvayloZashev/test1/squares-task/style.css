@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+}
+
+.container {
+  border: 2px solid black;
+  width: 100%;
+  min-height: 600px;
+}
+
+.square {
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+.square p {
+    width: 200px;
+    height: 200px;
+}
+
+/* Smallest first (<399px) */
+@media screen and (max-width: 399px) {
+
+    
+}
+
+/* 400 - 499 */
+@media screen and (min-width:400px) and (max-width:499px)  {
+    .container {
+        background-color: black;
+    }
+}
+
+/* 500 - 599 */
+@media screen and (min-width:500px) and (max-width:599px) {
+
+}
+
+/* 600 - 699 */
+@media screen and (min-width:600px) and (max-width:699px) {
+    
+}
+
+/* 700 - 799 */
+@media screen and (min-width:700px) and (max-width:799px) {
+    
+}
+
+/* > 800 */
+@media screen and (min-width: 800px) {
+
+}
