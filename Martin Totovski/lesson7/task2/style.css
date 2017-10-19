@@ -27,9 +27,11 @@ header{
 .top-navigation ul li{
     list-style: none;
     float: left;
+    padding: 10px;
 }
 .top-navigation ul li a{
-    padding: 30px;
+    padding: 20px;
+    box-shadow: 0 1px 0;
 }
 
 a{
@@ -70,8 +72,30 @@ a:hover{
 }
 .image-wrapper{
     display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
 }
-#pic1{
-    height: 200px;
-    background-image: url(pic1.png);
+.image-wrapper img{
+    padding: 20px
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-transform: none;
+    height: 150px;
+}
+.footer-icons{
+    padding: 10px;
+}
+.footer-icons a{
+    padding: 20px;
+    color: white;
+}
+.footer-icons a:hover{
+    color: lightblue;
 }
