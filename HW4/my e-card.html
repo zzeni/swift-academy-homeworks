@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <title>My e-card flexlayout</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="my e-card.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <h1 id="top">My e-card</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#aboutme">За мен</a></li>
+        <li><a href="#mywork">Проекти</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="left">
+      <nav>
+        <ul>
+          <li><a href="#project1"> Проект 1</a></li>
+          <li><a href="#project2">Проект 2</a></li>
+          
+          
+        </ul>
+      </nav>
+    </section>
+    <section class="right">
+      <article id="aboutme">
+        <h2>За мен</h2>
+        <p>
+          <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/18193907_10209381242067755_6012710704042823932_n.jpg?oh=e5e9fc0f65384597eeb8c429566f5cb8&oe=5A82222F" width="100px">
+            Аз съм Виктория Андреева, на 23 години, от София. Наскоро се дипломирах като магистър по "Маркетинг" и сега уча Front-End Development в Swift Academy.
+        </p>
+      </article>
+
+      <hr>
+      <article id="mywork">
+        <h2>Моите проекти</h2>
+
+        <section class="project" id="project1">
+          <h3>Проект 1</h3>
+
+          <p>
+            <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/22089748_10210659897833350_8794418418279637757_n.jpg?oh=b83a25c28c60b4d1c981eec3cacf4401&oe=5A7EC24C">
+            Прекрасен ден. Посрещане на изгрева с усмивка.
+          </p>
+        </section>
+
+        <section class="project" id="project3">
+          <h3>Проект 2</h3>
+
+          <p>
+            <img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/18221861_10209380147200384_4133689253516246724_n.jpg?oh=b05b850930621a458f272e7ad7633015&oe=5A778278">
+            Княжество Монако̀, популярно и като само Монако̀, е конституционна монархия и град-държава в Западна Европа разположено на френската ривиера между Средиземно море и Франция.
+          </p>
+        </section>
+
+        
+      </article>
+
+      <hr>
+
+      <article id="contact">
+        <h2>Контакти с мен</h2>
+        <ul>
+          <li><a href="tel:+359886786545">+359 885 970 004</a></li>
+          <li><a href="mailto:viki.andreeva@hotmail.com">viki.andreeva@hotmail.com</a></li>
+          <a href="https://www.facebook.com/victoria.andreeva.71">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAq1BMVEX///8tRIUAADkAACgAACbCwsi0tLsjPYIZN3+1uMz09fcDLXt6gqm0tL0AACSutMkAADTPz9QAABgAAB0AAC6GhpMwME+Klbbn6O9LS2OWlqETM33Kz935+vyYob4AAAAAADIAACBhYXSrq7YAJnjt8PYzSolZaJrQ0+AAABU2NlNKXZSOjpq8wtSenqsAG3Xd3eBra3zX19xteqWfp8I/VI9ue6Z9ia4YGEFxdDvZAAADGUlEQVR4nO3ca1eiQACA4ZUsTIoUapdCUrtSajdr3f//y9aTuTIJOMNONsx5n48eZjpvJAjS/PgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBO0b5OPXHy7q5G1fqSqdfSKXYzjZdDv6mPHz5UKRy1Gppdpf8C7xy9ggqJE093YMO9XU4+1BzoOGFbuXDmai9seMli7q6vvdBXfy8efEXhxy96t6m9cGfP+sJDCimkkEKbCt35BzTPi+fmH9VcYRYbCt3Ynb5O0jRK07TX2389F6apf6HrHaSf54ltKvSm12vTJDYVepOcaWwqjNf+QJULB8dKtlzo5QYqFQ4uTlSM/2y1sHWeP41Koer1wc/ONgvfCqaxpjDOO8pYVXhTNI0thW7Bu9CewvwzxbvNhYN3nUxhO+iUuPuWwkQc3Ju9NdyF7Ga5hYOLd6edTGGYu48/BN9R+OlI+tvLH5xbGC5ee/FlC8NvKHSnwtCjuGC7/MLFi12zC2fC0Lei7Wpc+Cs7sl20C60pjAq/D6CQQgoppJBC+wrdeOlK+EwTPcYrmz95m1voztLeUpQdmfRW0tnGe94GFxZe9WbZX3hbqbC/U6JvVuFNdohsYXK5V+LSqELhNo10oSQjCiPrC1PrC/eFh+OkjzT3pyXujSo8r3bGvzPibqJU4UG1wn7Zl2pmnS1GwhDps8X4rMTYqEJxkvodaZIlcejq5WvxtlvNCmWuLT49Zly3wkyr7uvDflhia0earyw049pCd2FwHK72oV+irvvw6fn5ubucoluqpoUVUGhKof9ke+Hxie2FzjDK+/kSsg+2GV3YcdYf2pQxrk2h02meqe/GlwvhX4vMLpy/F4eBotAfOHUq/H8UUkghhRRSSCGFFFJIIYVaCtXXVFBZF0O5UP+6GE31dTEmhU9rVy50Rx9bJIH2wqDCPcmR/E6ULFytT/OgOzEcrwdslNxKrzHkiYWP+WsMtTJrDD2EzbLHnhQ1gyqBcy9HsoQ1oNr524j/v9c+LHvsSdFh5dvmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAl/gJxELouyixi2wAAAABJRU5ErkJggg==" width="60" height="60" border="0" alt="Facebook profile"></a>
+        </ul>
+        
+      </article>
+
+      <hr>
+
+      <footer>
+        Copyright &copy; 2017
+      </footer>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
