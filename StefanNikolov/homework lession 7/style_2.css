@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid black;
+}
+
+img {
+    height: 35px;
+    width: 35px;
+    margin: 0px;
+    
+}
+
+header {
+    width: 100%;
+    display: inline;
+    flex-direction: column;
+}
+
+header div {
+    width: 100%;
+    font-size: 2em;
+    padding: 10px;
+    display: flex;
+    align-content: space-between;
+}
+
+header div a {
+    padding: 10px;
+    height: 100%;
+}
