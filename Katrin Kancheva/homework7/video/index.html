@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Video and Audio examples</title>
+    <meta name="author" content="Katrin Kancheva">
+    <meta name="description" content="Lesson 5 example - audio and video elements">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        body,
+        ul,
+        video,
+        audio {
+            padding: 0;
+            margin: 0;
+        }
+
+        a,
+        a:visited,
+        a:active {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            color: burlywood;
+        }
+
+        .video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -9999;
+        }
+
+
+        #wrapper {
+            display: table;
+            margin: 1em auto;
+
+        }
+
+        header ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+
+        li {
+            list-style: none;
+            padding: .5em;
+            text-transform: uppercase;
+            border-top: 4px solid blue;
+            border-bottom: 4px solid blue;
+        }
+
+        footer {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            bottom: 2em;
+        }
+
+        .flex {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <header>
+            <div id="wrapper">
+                <div id="cell">
+                    <audio controls>
+             <source src="storm.mp3" type="audio/mpeg"/>
+             <source src="storm_ogg.ogg" type="audio/ogg" />
+             Your browser does not support the audio element.
+        </audio>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="list">
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+            <video class="video" autoplay loop>
+    <source src="rain.mp4" type="video/mp4"/>
+        <source src="rain.webm" type="video/webm" />
+</video>
+        </header>
+
+        <footer>
+            <p>Swift Academy &copy; 2017</p>
+        </footer>
+    </div>
+</body>
+
+</html>
