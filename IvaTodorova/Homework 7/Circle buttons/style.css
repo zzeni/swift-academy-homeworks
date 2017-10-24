@@ -104,6 +104,7 @@ body {
 
     .button {
         border-radius: 0;
+        width: 100%; 
 
     }
 
@@ -118,4 +119,10 @@ body {
     #blue {
         position: inherit;
     }
+    
+    .top {  
+    flex-direction: column; 
+    }
+    
+    
 }
