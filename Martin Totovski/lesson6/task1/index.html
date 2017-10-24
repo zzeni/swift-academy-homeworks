@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,55 @@
 </head>
 
 <body>
-    
+    <h1>Contact us!</h1>
+    <form method="get" action="success.html">
+        
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="First and Last name">
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="e-mail@example.com">
+        </div>
+
+        <div>
+            <label for="language">Choose language:</label>
+            <select>
+                <option value="volvo">Bulgarian</option>
+                <option value="saab">English</option>
+                <option value="mercedes">French</option>
+                <option value="audi">German</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="phone">Phone number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="+359xxxxxxxxx">
+        </div>
+        
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your password">
+        </div>
+        
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Comments..."></textarea>
+        </div>
+        
+        
+        <div class="bottom-buttons">
+            <label></label>
+            <button type="reset">Reset</button>
+        </div>
+        
+        <div class="bottom-buttons">
+            <input type="submit">
+        </div>
+        
+    </form>
+
 </body>
 </html>
