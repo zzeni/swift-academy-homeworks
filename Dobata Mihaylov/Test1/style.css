@@ -1,0 +1,178 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6em;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  border: 2px solid black;
+  width: 100%;
+  min-height: 600px;
+}
+
+.square {
+  color: white;
+  width: 200px;
+  height: 200px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+p{
+  margin: 0;
+  text-align: center;
+}
+
+/* Smallest first (<399px) */
+@media (max-width:399px) {
+
+.square{
+  width: 100%;
+}
+
+}
+
+/* 400 - 499 */
+@media (min-width: 400px) and (max-width: 499px){
+
+.red{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blue{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.black{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.green{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+}
+
+/* 500 - 599 */
+@media (min-width: 500px) and (max-width: 599px){
+
+.blue{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.green{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.red{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.black{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+}
+
+/* 600 - 699 */
+@media (min-width: 600px) and (max-width: 699px){
+.green{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.black{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blue{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.red{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+}
+
+/* 700 - 799 */
+@media (min-width: 700px) and (max-width: 799px){
+.black{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.red{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.green{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.blue{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+}
+
+/* > 800 */
+@media (min-width: 800px){
+
+#container{
+  display: flex;
+}
+
+.square{
+  width: 100%;
+}
+
+
+}
