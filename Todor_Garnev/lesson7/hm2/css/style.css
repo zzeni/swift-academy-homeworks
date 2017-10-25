@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #484444;
+    letter-spacing: 0.2em;
+}
+
+header,
+#intro,
+nav {
+    text-transform: uppercase;
+}
+
+header h1 {
+    padding: 0 10px;
+}
+
+header .menu-icon {
+    float: right;
+}
+
+h1 {
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header ul {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #484444;
+}
+
+header nav li {
+    margin: 0 10px;
+    padding: 1em;
+    box-shadow: 0 1px 0 #ccc;
+    border-top: 1px #ccc solid;
+}
+
+main nav li {
+    padding: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+#intro {
+    padding: 1em;
+    background-image: url(../images/header-bg.jpg);
+    height: 45vh;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center 30px;
+    background-repeat: no-repeat;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 25px 50px;
+    background-color: white;
+    border: 10px solid #FAFAFA;
+}
+
+#images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#images img {
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+}
+
+footer {
+    background-color: #0B0B0C;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 20vh;
+    letter-spacing: 0em;
+    margin-top: 50px;
+}
+
+footer a {
+    margin-left: 40px;
+}
+
+@media (min-width: 680px) {
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        justify-content: space-between
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header h1 a {
+        display: none;
+    }
+
+    header ul {
+        flex-direction: row;
+    }
+
+    header nav li {
+        border-top: 0;
+        padding: 0.5em;
+    }
+
+    #intro {
+        background-position: center center;
+    }
+
+    #images {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
