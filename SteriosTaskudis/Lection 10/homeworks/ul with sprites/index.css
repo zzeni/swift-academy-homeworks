@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: beige;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    float: left;
+}
+ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url('social-media.jpg');
+    /*! background-size: cover; */
+    border-radius: 100%;
+}
+.fb {
+    background-position: -5px;
+}
+.google {
+    background-position:-55px;
+}
+.insta {
+    background-position: -105px;
+}
+.p {
+    background-position:-155px;
+}
+.tw {
+    background-position:-205px;
+}
