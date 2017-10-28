@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 10px;
+}
+
+.nav-text a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color:#545454;
+    margin: 15px;
+}
+.icon1 {
+    background-image: url(./lesson10.bmp);
+    background-size: auto 57px;
+    background-position: -8px;
+}
+
+.icon2 {
+    background-image: url(./lesson10.bmp);
+    background-size: auto 57px;
+    background-position: -68px;
+}
+
+.icon3 {
+    background-image: url(./lesson10.bmp);
+    background-size: auto 57px;
+    background-position: -128px;
+}
+
+.icon4 {
+    background-image: url(./lesson10.bmp);
+    background-size: auto 57px;
+    background-position: -188px;
+}
+
+.icon5 {
+    background-image: url(./lesson10.bmp);
+    background-size: auto 57px;
+    background-position: -249px;
+}
+
+.nav-text{
+    display: none;
+}
+
+span:hover{
+         transform: rotate(30deg);
+    } 
+
+@media (min-width:600px){
+    .nav-imgs{
+        display: none;
+    }
+    .nav-text{
+    display:block;
+}
+
+   
