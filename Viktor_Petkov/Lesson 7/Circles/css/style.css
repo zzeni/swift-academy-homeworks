@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 80vw;
+    margin: auto;
+    background: white;
+}
+
+.top {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about,
+.resume,
+.portfolio,
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    border: solid 10px;
+    border-style: dashed;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.about {
+    transition: all 5s linear;
+    background: #8D5957;
+    border-color: #E1D3CE;
+}
+
+.resume {
+    background: #597F48;
+    border-color: #90AD78;
+    margin-left: -25px;
+}
+
+.portfolio {
+    background: #948257;
+    border-color: #B8A182;
+    margin-left: -25px;
+}
+
+.contact {
+    background: #474956;
+    border-color: #7A889A;
+    margin-left: -25px;
+}
+
+
+h1{
+    margin: 0px;
+    padding: 40px;
+    border: solid 10px;
+    border-style: dashed;
+    border-color: #E1D3CE;
+    color:white;
+    background: #8D5957;
+    text-align: center;
+}
+.empty {
+    background: #E1D3CE;
+    height: 600px;
+    border: solid 10px;
+    border-style: dashed;
+    border-color: #8D5957;
+    border-top:none;
+}
+
+.about:hover {
+    z-index: 1;
+    position: relative;
+    bottom: 10px;
+
+}
+
+.resume:hover {
+    z-index: 1;
+    position: relative;
+    bottom: 10px;
+
+}
+
+.contact:hover {
+    z-index: 1;
+    position: relative;
+    bottom: 10px;
+}
+
+.portfolio:hover {
+    z-index: 1;
+    position: relative;
+    bottom: 10px;
+}
+
+
+@media screen and (max-width: 680px){
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+    .about,
+    .resume,
+    .portfolio,
+    .contact {
+        border-radius: 0%;
+        width: 100%;
+        margin: auto;
+    }
+}
