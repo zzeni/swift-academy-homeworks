@@ -1,0 +1,17 @@
+.form-horizontal{
+    margin: 30px;
+}
+.page-header{
+    padding: 10px;
+    text-align: center;
+    background-color: #eee;
+}
+#message{
+    height: 100px;
+    resize: none;
+}
+
+.form-group button{
+    margin: 10px 10px;
+}
+
