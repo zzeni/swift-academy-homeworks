@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:verdana;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex-grow: 4;
+}
+header {
+    background: #4D9B84;
+    flex-grow: 2;
+}
+.heading {
+    padding: 3em;
+}
+.username, .email {
+    width: 45%;
+    float: left;
+}
+.email {
+    margin-left: 10%;
+}
+.email input, .username  input {
+    width: 100%;
+}
+.submit-btn {
+     background: #4D9B84;
+     color: white;
+}
+.btn-group {
+    float: right;
+}
+.info h4 {
+    margin-top: 0px;
+}
+.info ul {
+    list-style-type: none;
+    width: 50%;
+}
+.info ul li {
+    margin-bottom: 12px;
+}
+footer {
+    background: #303F4F;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+footer p {
+    align-self: center;
+    margin: 0 0 0 20px;
+}
+.to-top{
+    background: #5BB499;
+    /*! margin-right: 20px; */
+    flex-basis: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.to-top a {
+    text-decoration: none;
+    color: white;  
+}
+@media (max-width:768px) {
+    .form-group {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .to-top {   
+      margin-right: 0px;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
