@@ -1,0 +1,99 @@
+body {
+    background-color: #EDF0F1;
+}
+
+
+body .jumbotron {
+    background-color: #4D9B84;
+}
+
+body .title-common {
+    text-align: center;
+    margin: 50px;
+}
+
+h3 {
+    display: inline-block;
+}
+
+.panel {
+    border: 0px;
+}
+
+
+form .btn {
+    background-color: #5CB699;
+    border-radius: 0;
+    position: absolute;
+    top: 250px;
+    right: 15px;
+    color: #EDF0F1;
+}
+
+
+form div .form-group .form-control {
+    border-radius: 0;
+}
+
+
+form div #exampleTextarea {
+    resize: none;
+
+}
+
+form #submit-button {
+    position: absolute;
+    top: 340px;
+}
+
+.map-marker-paragraph {
+    display: inline-block;
+
+}
+
+
+.first-info {
+    padding: 5px;
+}
+
+
+
+container div p {
+    font-family: monospace;
+}
+
+
+.map-marker-paragraph #first-line {
+    display: inline-block;
+}
+
+.map-marker-paragraph .second-and-third-line {
+    margin-left: 12px;
+}
+
+.info-paragraph p {
+    display: inline-block;
+}
+
+
+
+div.panel-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303F4F;
+    height: 100px;
+    color: #C8D1DA;
+}
+
+div.panel-footer p {
+    float: left;
+    margin-bottom: 0;
+}
+
+body div div #chevron-button {
+    float: right;
+    background-color: #5CB699;
+    color: #F2FCFB;
+    border-radius: 0;
+}
