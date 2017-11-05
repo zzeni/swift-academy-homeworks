@@ -64,7 +64,7 @@ container div p {
 
 
 
-container div .map-marker-paragraph #map-paragraph:before {
+container div .map-marker-paragraph #map-paragraph::before {
     font-family: FontAwesome;
     letter-spacing: 10px;
     content: "\f041";
@@ -72,18 +72,18 @@ container div .map-marker-paragraph #map-paragraph:before {
 
 
 
-container div .map-marker-paragraph #phone-paragraph: before {
+container div .map-marker-paragraph #phone-paragraph:: before {
     font-family: FontAwesome;
     content: "\f098";
 }
 
 
-container div .map-marker-paragraph #fax--paragraph: before {
+container div .map-marker-paragraph #fax--paragraph:: before {
     font-family: FontAwesome;
     content: "\f1ac";
 }
 
-container div .map-marker-paragraph #envelope-paragraph: before {
+container div .map-marker-paragraph #envelope-paragraph:: before {
     font-family: FontAwesome;
     content: "\f0e0";
 }
