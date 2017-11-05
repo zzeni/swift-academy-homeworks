@@ -42,14 +42,6 @@ div a .lg-only::after{
 }
 
 
-.circle:focus{
-    background-color:red;
-}
-
-
-
-
-
 @media (max-width: 459px) {
     
 
