@@ -1,0 +1,24 @@
+.site-nav {
+    margin-bottom: 0;
+}
+
+.ra {
+    float: right;
+}
+
+nav:first-child {
+    background-color: darkseagreen;
+}
+
+footer {
+    background-color: darkslategray;
+}
+
+btn btn-accept:first-child {
+    background-color: darkseagreen;
+}
+
+form .required:before {
+    content: " * This field is required";
+    color: red;
+}
