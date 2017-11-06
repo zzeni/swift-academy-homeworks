@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <h1>The website</h1>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-info btn-block btn-lg " data-toggle="modal" data-target="#myModal">
+           Click to contact us
+        </button>
+
+            <!-- Modal -->
+            <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Please fill in the form bellow:</h4>
+                        </div>
+
+                        <form>
+                            <div class="form-group row form-flex">
+                                <label>Име</label>
+                                <div class="input-group customized">
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Име" required>
+                                </div>
+
+                            </div>
+                            <div class="form-group row form-flex">
+                                <label>Фамилия</label>
+                                <div class="input-group customized">
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    </span>
+                                    <input type="password" class="form-control" placeholder="Фамилия" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row form-flex">
+                                <label>E-mail</label>
+                                <div class="input-group customized">
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" placeholder="E-mail Adress" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row form-flex">
+                                <label>Телефон</label>
+                                <div class="input-group customized">
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-earphone"></span>
+                                    </span>
+                                    <input type="tel" class="form-control" placeholder="+359 88 555 5555" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group row form-flex">
+                                <label>Съобщение</label>
+                                <div class="input-group customized">
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    </span>
+                                    <textarea cols="" rows="3" class="form-control" placeholder="Съобщение" required id="text-id"> </textarea>
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+
+                            <button type="submit" class="btn btn-warning btn-lg col-xs-1col-sm-2 col-md-2 col-lg-2">Изпрати<span class="glyphicon glyphicon-send"></span>
+
+                        </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-default panel-login">
+                
+                <h3>Wellcome</h3>
+
+                <hr>
+
+
+                <!-- Dropdown menu -->
+                <div class="dropdown">
+                    <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select
+                                <span class="caret"></span>
+                            </button>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <a href="#para-1">
+                            <li>First paragraph</li>
+                        </a>
+                        <a href="#para-2">
+                            <li>Second paragraph</li>
+                        </a>
+                        <a href="#para-3">
+                            <li>Third paragraph</li>
+                        </a>
+                    </ul>
+                </div>
+
+
+
+                <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+
+                            <p class="text-justify">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet, consectetur, adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+
+                            <img src="img/2.jpg" title="small fllower" alt="flower image" class="img-thumbnail"></div>
+
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <p class="text-justify">Utroque adversarium ne eos. Ut est unum ubique nonumes, ea sed debitis insolens neglegentur, quod labitur adolescens qui cu. Ea est zril iuvaret intellegat. Vim in falli nulla eligendi, natum tantas sed at, omittam referrentur necessitatibus eum an. Ubique bonorum delenit an qui, id affert contentiones eam. Vis enim autem liber an. Consul evertitur vituperatoribus eu cum, usu laudem audire dolorem no. An tibique deserunt vix. Eam ut labore nemore vituperata, equidem molestie consetetur sed in, nec case labores eu. Ad eos paulo definitiones, ut modus accumsan vim, vel meliore omnesque ad. Homero bonorum epicurei nam an.</p>
+
+                            <img src="img/1.jpg" title="small fllower" alt="flower image" class="img-thumbnail"></div>
+
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <p class="text-justify">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="settings">
+                            <p class="text-justify">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum.</p>
+
+                            <img src="img/3.jpg" title="small fllower" alt="flower image" class="img-thumbnail"></div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Affix-->
+            <div class="btn btn-info btn-sm" data-spy="affix" data-offset-top="60" data-offset-bottom="350">
+                Affix
+            </div>
+
+
+
+
+            <!-- Accordion-->
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Section 1</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Section 2</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Section 3</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <p class="text-justify" id="para-1">
+
+                Most Cut Flowers are popular choices as gifts on Special Occasions, either as a single cut flower or as a bunch or a bouquet of cut flowers. Rose is the most popular cut flower. Carnations, Gerberas, Chrysanthemums also enjoy a huge demand in the cut flower market.Tulips, Gladioli, Lilies, Alstroemerias, Anthuriums etc., are also popular with the flower lovers. What makes a Good Cut Flower? A Cut Flower should meet the following parameters- Appeal and beauty of the Cut Flower. Sweet fragrance of the Cut Flower. Long stemmed Cut Flower.Extended vase life of the Cut Flower. The following features of a Cut Flower make their trade profitable for Cut Flower growers and traders. More production per square foot of flower bed. Extended production and a productive life as long as the marketing season last. Ability to be marketed as Fresh Cut Flowers, while the surplus are sold as dried florals. Resistance to disease and pests. Cut Flower Care Caring for Cut Flowers and keeping them fresh is indeed a science in itself. The first step towards making Cut Flowers last longer is to make sure that they are quickly placed in water to prevent them from wilting. Cut stems should be placed in water immediately, as air rapidly moves into the water-conducting tissues and plugs the cells. This is why a Cut Flower that has been out of water for more than a few minutes should have a small portion of the lower stem cut off so that water moves up freely when the stem is returned to water. Cuts can be made under-water to assure the no air enters the stem. Further, care of your cut flowers is enhanced by following the tips given below- Commercial floral preservatives increase the life of Cut Flowers and should always be used. A floral preservative is a complex mixture of sucrose (sugar), acidifier - an inhibitor of microorganisms, and a respiratory inhibitor.
+
+            </p>
+            <hr>
+
+            <p class="lead text-justify" id="para-2">
+                <mark>
+                To aid the floral preservative in slowing down the growth of microorganisms around the Cut Flowers, always clean the flower vase or container. Remove all leaves on the stems of the Cut Flowers below the water surface as they soon deteriorate. Place the cut flowers in a cool location for an hour or two. Cut Flowers placed in cool temperatures lose less water.
+            </mark>
+            </p>
+
+            <hr>
+            <p class="text-justify" id="para-3">
+                A process called hardening ensures maximum water uptake, where the freshly cut stem of the Cut Flower is placed in 110 degree Fahrenheit water (plus preservative). Check the water level of the floral container or vase, where the Cut Flowers are placed, daily and add water plus preservatives when needed. Let the cut flowers get a good amount of ventilation. Keep Cut Flowers away from hot or cold air drafts and hot spots (radiators, direct heat, or television sets). Never store fruit and Cut Flowers together. Apples produce ethylene gas, a hormone that causes senescence or aging in the Cut Flowers. Cut Flower Business The world Cut Flower Trade is characterized by a high degree of concentration by sources. Exports from the Netherlands to Germany are a principal component of the world Cut Flower trade. The trade makes up a significant chunk of the intra EU trade, which accounts for a large part of the global trade. In the Americas, Colombia is the major supplier to the United States. Japan receives its supplies from a more diversified base with Taiwan, New Zealand and Europe being the most important suppliers. The Netherlands has a good and functional trade system to facilitate the movement of Cut Flowers which form a majority of the flowers that are traded. Cut Flower growers from all over the world assemble at the famed flower auctions to find suitable buyers for their produce. Flowers are imported from various countries in order to create the largest possible assortment of flowers. Newly established players in the Cut Flower market include Kenya, Ecuador and Zimbabwe supplying to their newly emerging ambitious competitors in China, India, the Republic of Korea, Malaysia, Malawi, Mexico, Palestine, Peru, South Africa and Zambia. You may also be interested in Books on flowers
+            </p>
+            <hr>
+
+
+
+
+            <!-- Spyscroll-->
+
+            <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+                <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    ...
+                    <ul class="nav navbar-nav">
+                        <li><a href="#para-1">Section 1</a></li>
+                        <li><a href="#para-2">Section 2</a></li>
+                        <li><a href="#para-3">Section 3</a></li>
+                    </ul>
+                </nav>
+
+            </body>
+
+
+
+
+            <a class="btn fixed-arrow" href="#top" role="button" id="chevron-button">
+            <i class="fa fa-chevron-up fa-2x"></i>
+        </a>
+
+
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <p id="copyright">Copyright &copy; 2017</p>
+    </footer>
+
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
