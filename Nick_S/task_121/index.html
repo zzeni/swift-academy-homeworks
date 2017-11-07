@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container" data-baba="">
+    <h2>Hit the button below</h2>
+
+    <!-- Button trigger modal -->
+	  <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+      Contact me
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+       
+		  <!-- task 11 form -->
+        <div class="modal-content">
+			<div class="panel panel-default">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h2 class="h2">
+								Свържете се нас !</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="well">
+							<form>
+								<div class="row">
+									<div class="col-md-8">
+										<div class="form-group">
+											<label for="firstname">
+												Име</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+												</span>
+												<input type="text" class="form-control" id="name" name="firstname" required="required" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="surname">
+												Фамилия</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+												</span>
+												<input type="text" class="form-control" id="surname" name="surname" required="required" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="email">
+												Е-майл</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+												</span>
+												<input type="email" class="form-control" id="email" name="email" required="required" /></div>
+										</div>
+										<div class="form-group">
+											<label for="phone">
+												Телефон</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span>
+												</span>
+												<input type="phone" class="form-control" id="phone" required="required" maxlength="12" name="phone" required="required" size="3" type="tel" /></div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="form-group">
+											<label for="Message">
+												Съобщение</label>
+											<div class="input-group">
+												<span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
+												</span>
+												<textarea name="message" id="message" class="form-control" rows="6" cols="25" required="required" placeholder="Въведете Вашето съобщение тук ... "></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<button type="submit" class="btn btn-info pull-right" id="btnContactUs">
+											Изпрати</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>Membership conditions</h3>
+
+    <div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#gold" aria-controls="gold" role="tab" data-toggle="tab">Gold</a></li>
+        <li role="presentation"><a href="#silver" aria-controls="silver" role="tab" data-toggle="tab">Silver</a></li>
+		  <li role="presentation"><a href="#limited" aria-controls="limited" role="tab" data-toggle="tab">Limited</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="gold"><h4>Welcome to the VIP table !</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula, ex nec bibendum convallis, est lorem tempor orci, posuere faucibus orci erat commodo elit.Vivamus vehicula, ex nec bibendum convallis, est lorem tempor orci, posuere faucibus orci erat commodo elit. Suspendisse quis est justo. Cras at orci justo. Integer tempor tellus eget lacus dictum, non ornare mi malesuada. Suspendisse quis est justo. Cras at orci justo. Integer tempor tellus eget lacus dictum, non ornare mi malesuada. </p>
+        </div>
+		  <div role="tabpanel" class="tab-pane" id="silver"><h4>Still the best service in the area</h4><p>Mauris eget ullamcorper nisi. Morbi nulla odio, dapibus lacinia diam at, commodo feugiat eros. Nullam lobortis ex ligula, in semper augue auctor vel. Curabitur ut consectetur nisi. Fusce eu felis in enim consequat hendrerit. Maecenas accumsan tempus auctor. Nunc sem sapien, laoreet ac feugiat nec, lobortis a tortor. Integer consectetur lacus quis neque porttitor, eu pharetra felis sagittis. Curabitur interdum metus eget velit interdum tincidunt. Pellentesque ultricies ultrices nisl nec tempus.</p>
+			  <div role="tabpanel" class="tab-pane" id="limited"><h4>Find a second job, here we offer almost nothing ..</h4><p>Mauris eget ullamcorper nisi. Morbi nulla odio, dapibus lacinia diam at, commodo feugiat eros. Nullam lobortis ex ligula, in semper augue auctor vel. Curabitur ut consectetur nisi. Fusce eu felis in enim consequat hendrerit. Maecenas accumsan tempus auctor. Nunc sem sapien, laoreet ac feugiat nec, lobortis a tortor. Integer consectetur lacus quis neque porttitor, eu pharetra felis sagittis. Curabitur interdum metus eget velit interdum tincidunt. Pellentesque ultricies ultrices nisl nec tempus.</p>
+			
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
