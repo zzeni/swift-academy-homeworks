@@ -24,6 +24,11 @@ form .form-flex label {
     width: 100px;
 }
 
+.panel-login .tab-content .tab-pane {
+    padding: 1em;
+    background-color: #fff;
+}
+
 
 form div .customized {
     width: 50%;
