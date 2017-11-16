@@ -18,13 +18,16 @@ display("When the entered numer is 5,\nthen the number is: \t\t" + calc(5));
 
 /* WITH TRINARY OPERATOR  */
 
-function calc(x) {
-    return (x%2 === 0) ? "even" : "odd";
+function calc(y) {
+    return (y%2 === 0) ? "even" : "odd";
 }
 
-var x;
-calc(x);
+var y;
+y = 5;
+
+calc(y);
 display("With trinary operator\n" + "When the entered numer is 5,\nthen the number is: \t\t" + calc(5));
+display("The value is\t\t\t" + y);
 
 
 /* SECOND TASK FROM LESSON 14 */
@@ -42,20 +45,24 @@ var team;
 team = ["Ivan", "Pesho", "Mimi"];
 
 display("Is Pesho in the list?\t\t" + isMember("Pesho"));
+display("The team is:\t\t\t" + team);
 
 /* WITH TRINARY OPERATOR */
 
-function isMember(list, name) {
+function areMember(list, name) {
     return list.includes(name) ? "no" : "yes";
 }
 
-var team;
-team = ["Ivan", "Pesho", "Mimi"];
+var team2;
+team2 = ["Ivan", "Pesho", "Mimi"];
 
-display("With trinary operator\n" + "Is Pesho in the list?\t\t" + isMember("Pesho"));
+display("With trinary operator\n" + "Is Pesho in the list?\t\t" + areMember("Pesho"));
+display("The team is:\t\t\t" + team2);
 
 /* TASKS FROM REPL.IT */
 /* forChekEven */
+
+
 function display(text) {
   var output = document.createElement("pre");
   output.textContent = text;
@@ -100,28 +107,30 @@ array = [1, -1, 1, -1, 1, -1];
 sum(array);
 
 display("The sum of all numbers is:\nAnswer: \t\t\t" + sum(1, -1, 1, -1, 1, -1));
+display("The list is: \t\t\t" + array);
 
 
 /* doCheckEven */
 
-function doCheckEven(array) {
+function doCheckEven(array2) {
     var i = 0;
     do {
-        if (array[i] % 2 === 1) {
+        if (array2[i] % 2 === 1) {
             return false;
         }
         i++;
-    } while (i < array.length);
+    } while (i < array2.length);
 
     return true;
 }
 
-var array;
-array = [2, 4, 6, 8, 10];
+var array2;
+array2 = [2, 4, 6, 8, 10];
 
 doCheckEven(array);
 
 display("Are all numbers even?\nAnswer: \t\t\t" + doCheckEven(2, 4, 6, 8, 10));
+display("The list is: \t\t\t" + array2);
 
 
 /* whileCheckEven */
