@@ -18,15 +18,15 @@ display("When the entered numer is 5,\nthen the number is: \t\t" + calc(5));
 
 /* WITH TRINARY OPERATOR  */
 
-function calc(y) {
+function calc1(y) {
     return (y%2 === 0) ? "even" : "odd";
 }
 
 var y;
 y = 5;
 
-calc(y);
-display("With trinary operator\n" + "When the entered numer is 5,\nthen the number is: \t\t" + calc(5));
+calc1(y);
+display("With trinary operator\n" + "When the entered numer is 5,\nthen the number is: \t\t" + calc1(5));
 display("The value is\t\t\t" + y);
 
 
@@ -101,13 +101,13 @@ function sum(list) {
     return result;
 }
 
-var array;
-array = [1, -1, 1, -1, 1, -1];
+var array1;
+array1 = [1, -1, 1, -1, 1, -1];
 
-sum(array);
+sum(array1);
 
 display("The sum of all numbers is:\nAnswer: \t\t\t" + sum(1, -1, 1, -1, 1, -1));
-display("The list is: \t\t\t" + array);
+display("The list is: \t\t\t" + array1);
 
 
 /* doCheckEven */
