@@ -1,8 +1,20 @@
 /* global document */
+
+(function () {
+    "use strict";
+    
+    
+function display(text) {
+var output = document.createElement("pre");
+output.textContent = text;
+document.body.appendChild(output);
+}
+    
+    
 /* FIRST TASK FROM LESSON 14 */
 
 function calc(x) {
-    
+   
   if (x%2 === 0) {
     return "even";
    } 
@@ -12,8 +24,6 @@ function calc(x) {
    }
 }
 
-var x;
-calc(x);
 display("When the entered numer is 5,\nthen the number is: \t\t" + calc(5));
 
 /* WITH TRINARY OPERATOR  */
@@ -61,13 +71,6 @@ display("The team is:\t\t\t" + team2);
 
 /* TASKS FROM REPL.IT */
 /* forChekEven */
-
-
-function display(text) {
-  var output = document.createElement("pre");
-  output.textContent = text;
-  document.body.appendChild(output);
-  }
     
 function forCheckEven(list) {
     var i;
@@ -192,3 +195,5 @@ function circle(radius) {
 }
  
 display("What is the area of a circle\nwith radius = 5?\nAnswer: \t\t\t" + circle(5));
+    
+})();
