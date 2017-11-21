@@ -44,24 +44,40 @@
     
     
    /* THIRD TASK FROM LESSON 15 */
-   function obfuscate(text) {
-       var result = text.slice(0, 1) + "****" + text.slice(-1);
-       var result2 = text.slice(0, 1) + "*****" + text.slice(-4);
-
-       if (text.length <= 4) {
-           throw "Error: given text is too short";
-       } else if ((text.length > 4) && (text.length < 8)) {
-           return result;
-       } else {
-           return result2;
-       }
-   }
-   try {
-       obfuscate("asd");
-   } catch (error) {
-       display("What happens when you enter \'asd\':" );
-       display(error);
-   }
-    
+    function obfuscate(text) {
+        var result, i;
+        if (text.length <= 4) {
+            throw new Error("given text is too short");
+        } else if (text.length > 4 && text.length < 8) {
+            result = "";
+            for (i = 0; i < text.length; i++) {
+                if (i === 0 || i == text.length - 1) {
+                    result = result + text.charAt(i);
+                } else {
+                    result = result + "*";
+                }
+            }
+        } else {
+            result = "";
+            for (i = 0; i < text.length; i++) {
+                if (i === 0 || (text.length - i) < 5) {
+                    result = result + text.charAt(i);
+                } else {
+                    result = result + "*";
+                }
+            }
+        }
+        return result;
+    }
+    try {
+        obfuscate("asd");
+    } catch (error) {
+        display("What happens when you enter \'secret\':");
+        display(obfuscate("secret"));
+        display("What happens when you enter \'0123456789\':");
+        display(obfuscate("0123456789"));
+        display("What happens when you enter \'asd\':");
+        display(error);
+    }
    
 })();
