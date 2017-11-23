@@ -33,7 +33,7 @@
       errorContainer.classList.add("hidden"); // hide the error container
 
       try {
-        machine.order(beverage);
+        machine.order(beverage.getName());
         displayStatus();
       }
       catch (error) {

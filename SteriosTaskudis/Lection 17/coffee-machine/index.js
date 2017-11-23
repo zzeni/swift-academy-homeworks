@@ -96,16 +96,16 @@ CoffeeMachine.prototype.status = function(){
 
 // ORDERS
 CoffeeMachine.prototype.order = function(coffeeType){
-    if(machine.coffee < RECEPIES[coffeeType].coffee) {
+    if(this.coffee < RECEPIES[coffeeType].coffee) {
         return console.log("You run out of coffee !"); 
     }
-    else if(machine.water < RECEPIES[coffeeType].water){
+    else if(this.water < RECEPIES[coffeeType].water){
         return console.log("You run out of water !");
     }
-    else if(machine.milk < RECEPIES[coffeeType].milk){
+    else if(this.milk < RECEPIES[coffeeType].milk){
         return console.log("You run out of milk !");
     }
-    else if(machine.cups < RECEPIES[coffeeType].cups){
+    else if(this.cups < RECEPIES[coffeeType].cups){
         return console.log("You run out of cups !");
     }
 
@@ -114,14 +114,14 @@ CoffeeMachine.prototype.order = function(coffeeType){
         RECEPIES[coffeeType].milk = 0;
     }
 
-    machine.coffee -= RECEPIES[coffeeType].coffee;
-    machine.water -= RECEPIES[coffeeType].water;
-    machine.milk -= RECEPIES[coffeeType].milk;
-    machine.cups -= RECEPIES[coffeeType].cups;
+    this.coffee -= RECEPIES[coffeeType].coffee;
+    this.water -= RECEPIES[coffeeType].water;
+    this.milk -= RECEPIES[coffeeType].milk;
+    this.cups -= RECEPIES[coffeeType].cups;
 
     // TURNOVER
     
-    machine.turnover += PRICES[coffeeType].price;
+    this.turnover += PRICES[coffeeType].price;
     
 }
 
