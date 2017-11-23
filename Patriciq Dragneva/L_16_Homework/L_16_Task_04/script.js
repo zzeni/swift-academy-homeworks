@@ -3,7 +3,7 @@
 (function () {
     "use strict";
 
-/* GOOD GUYS */
+/* BAD GUYS */
     function BadGuy(name, knownAs) {
         this.name = name;
         this.knownAs = knownAs;
@@ -19,7 +19,7 @@
 
 
 
-/* BAD GUYS */
+/* GOOD GUYS */
     function Hero(name, knownAs) {
         this.name = name;
         this.knownAs = knownAs;
