@@ -1,0 +1,25 @@
+body {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  margin: 1em 0;
+}
+
+.bike {
+  width: 200px;
+  border: 1px solid;
+  margin: 1em;
+  float: left;
+}
+
+.bike h2 {
+  background-color: #ddd;
+  padding: 1em;
+  margin: 0;
+}
+
+.bike p {
+  padding: 1em;
+}
