@@ -1,0 +1,19 @@
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    margin: 1em 0;
+}
+
+div {
+    width: 25vw;
+    margin: 2vw;
+    height: 150px;
+    overflow: auto;
+    float: left;
+    padding: 1em;
+    border: 2px solid purple;
+    border-radius: 5px;
+}
