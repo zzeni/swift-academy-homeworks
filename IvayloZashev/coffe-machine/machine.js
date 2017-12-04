@@ -86,9 +86,11 @@ var PRICES = {
 };
 
 Machine.prototype.order = function (product) {
-    this.coffee = this.coffee - RECIPES.product.coffee;
-    this.milk = this.milk - RECIPES.product.milk;
-    this.watter = this.watter - RECIPES.product.water;
-    this.cups = this.cups - RECIPES.product.cups;
-    this.turnover = this.turnover + PRICES.product.price;
+    console.log("product", product);
+    console.log("RECIPES", RECIPES);
+    this.coffee = this.coffee - RECIPES[product].coffee;
+    this.milk = this.milk - RECIPES[product].milk;
+    this.watter = this.watter - RECIPES[product].water;
+    this.cups = this.cups - RECIPES[product].cups;
+    this.turnover = this.turnover + PRICES[product];
 };

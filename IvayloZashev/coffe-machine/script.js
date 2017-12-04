@@ -1,4 +1,4 @@
-/*global Machine, document, Beverage */
+/*global Machine, document, Beverage, PRICES, RECIPES*/
 (function() {
     "use strict";
     var machine = new Machine();
@@ -26,9 +26,10 @@
   for (var i=0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function() {
       var beverageStr = this.getAttribute("data-beverage");
-      var beverage = new Beverage(beverageStr, PRICES.beverageStr, RECIPES.beverageStr);
+      var beverage = new Beverage(beverageStr, PRICES[beverageStr], RECIPES[beverageStr]);
       var errorContainer = document.getElementById("error");
 
+      console.log("beverage", beverage);
       errorContainer.classList.add("hidden"); // hide the error container
 
       try {
