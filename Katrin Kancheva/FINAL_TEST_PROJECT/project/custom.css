@@ -1,0 +1,141 @@
+/*NORMALIZE*/
+
+div {
+    display: block;
+}
+
+/*CUSTOM*/
+
+/*NAVIGATION BAR*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-search {
+    color: #fff;
+    display: inline-block;
+    margin-left: -100px;
+}
+
+header #divSearch {
+    float: left;
+    border-bottom: 1px solid #fff;
+    height: 29px;
+    width: 190px;
+    margin-left: 40px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+header #searchClose {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    float: left;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-left: 18px;
+    display: none;
+}
+
+
+header #divSearch input {
+    background-color: transparent;
+    border: none;
+    float: left;
+    width: 54%;
+    height: 100%;
+    color: #fff;
+    padding: 0;
+    font-family: "proxima-nova", "Open Sans", "Gill Sans", Corbel, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+
+input {
+    line-height: normal;
+    outline: none;
+}
+
+.wrapper-sliders {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header {
+    max-width: 100%;
+}
+
+
+/*FIRST SECTION*/
+
+.flex {
+    display: flex;
+    max-width: 50%;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.main-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.text-header {
+    margin-top: 20px;
+}
+
+.text-header h3 {
+    line-height: 1.25;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*CONTAINER WITH OFFERS*/
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.thumbnail-robben-img-wrap:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: 0.3s all ease;
+    z-index: 1;
+}
+
+figure {
+    margin: 0;
+}
