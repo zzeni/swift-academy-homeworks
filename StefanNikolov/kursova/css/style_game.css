@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -20,23 +20,23 @@
 }
 
 .lb {
-    border-left: 2px solid red;
+    border-left: 2px solid black;
 }
 
 .rb {
-    border-right: 2px solid blue;
+    border-right: 2px solid black;
 }
 
 .tb {
-    border-top: 2px solid green;
+    border-top: 2px solid black;
 }
 
 .bb {
     border-bottom:2px solid black;
 }
 
-.active {
-    background-image:url("game_ball.png");
+.sexyDiv {
+    background-image:url("/img/game_ball.png");
     background-size: 60px 60px;
     background-repeat: no-repeat;
      background-position: center center;
@@ -56,5 +56,5 @@
     justify-content: center;
 }
 .secondLineCntrl{
-    justify-content: space-between
+    justify-content: space-between;
 }
