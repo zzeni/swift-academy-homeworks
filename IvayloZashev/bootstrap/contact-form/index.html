@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav class="site-nav navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Ivaylo Zashev's site</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">Java script</a></li>
+                    <li><a href="#">Agile</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-center jumbotron">
+            <div class="container">
+                <h1>Contact me</h1>
+                <hr>
+                <p>I will return answer asap</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="col-xs-6">
+            <form action="#" method="post" novalidate>
+                <div class="form-group col-lg-6 required">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name" onblur="validateInput(this)"/>
+                </div>
+                <div class="form-group col-lg-6 required">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your email" onblur="validateInput(this)"/>
+                </div>
+                <div class="form-group col-lg-12 required">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Your message" onblur="validateMessage(this)"></textarea>
+                </div>
+                <div class="form-group col-lg-2 ra">
+                    <input type="submit" class="btn btn-accept" value="Submit"/>
+                </div>
+            </form>
+        </section>
+        <section class="col-xs-6">
+                <p>INFORMATION</p>
+                <div class="form-group"><i class="fa fa-map-marker" aria-hidden="true"></i>Sofia, Studentski grad, Nikolai Stoyanov 21</div>
+                <div class="form-group"><i class="fa fa-phone"></i>95945945959</div>
+                <div class="form-group"><i class="fa fa-fax"></i>453453453453</div>
+                <div class="form-group"><i class="fa fa-envelope"></i>ivaylo.em.zashev@gmail.com</div>
+        </section>
+    </div>
+    <footer class="navbar navbar-fixed-bottom">
+        This is the footer
+    </footer>
+</body>
+
+</html>

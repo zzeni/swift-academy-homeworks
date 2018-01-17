@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms example</title>
+    <link rel="stylesheet" href="Lesson%206%20-%20work%20in%20class.css">
+</head>
+
+<body>
+
+    <h1>My first form</h1>
+
+    <form method="get">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+
+            <label for="dropdown">Language</label>
+
+            <select name="dropdown">
+    <option value="english">English</option>
+            <option value="deutsch">Deutsch</option> 
+    <option value="bg">Български</option>
+        </select>
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" placeholder="+359xxxxxxxx">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea type="text" id="message" cols="50" rows="20" placeholder="Describe your issue"></textarea>
+
+
+        </div>
+
+
+
+        <div>
+
+            <input type="checkbox" name="accept" id="accept-box">
+            <label for="accept-box">Приемам условията за ползване</label>
+
+        </div>
+        <div>
+            <label for="button" button>
+            </label>
+            <button id="button">Submit
+            </button>
+            <label for="reset"></label>
+            <input type="reset" id="reset">
+
+
+        </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

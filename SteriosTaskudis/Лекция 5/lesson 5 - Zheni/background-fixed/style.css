@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1200px;
+  background-color: #313131;
+  color: #fafafa;
+  margin: 30px auto;
+  line-height: 1.5em;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2em 0;
+}
+
+section {
+  margin-bottom: 3em;
+}
+
+#mountain-1 {
+  background-image: url("montain1.jpg");
+}
+
+#mountain-2 {
+  background-image: url("montain2.jpg");
+}
+
+.mountain {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  height: 260px;
+}

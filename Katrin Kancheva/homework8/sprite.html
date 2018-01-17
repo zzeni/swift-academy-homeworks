@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            max-width: 350px;
+            margin: 10px auto;
+        }
+
+        .header {
+            background-color: #777;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .navigation ul li {
+            list-style: none;
+            padding: 10px;
+            color: #333;
+            border: 1px solid #ccc;
+            margin-top: 1px;
+            font-weight: bold;
+        }
+
+        .sprite {
+            background-image: url(https://swift-academy.zenlabs.pro/misc/tasks/lesson10/social-media.jpg);
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background-size: auto 100%;
+            margin-right: 10px;
+        }
+
+        .google {
+            background-position: -35px;
+        }
+
+        .pinterest {
+            background-position: 63px;
+        }
+
+        .twitter {
+            background-position: 31px;
+        }
+
+        .instagram {
+            background-position: -67px;
+        }
+
+        .facebook {
+            background-position: -3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>Social Navigation</h1>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><span class="facebook sprite"></span>facebook</li>
+                <li><span class="google sprite"></span>google+</li>
+                <li><span class="instagram sprite"></span>instagram</li>
+                <li><span class="sprite pinterest"></span>pinterest</li>
+                <li><span class="sprite twitter"></span>twitter</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

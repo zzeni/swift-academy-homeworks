@@ -1,0 +1,242 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Viktor Petkov
+
+*/
+
+#myBody {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.containerNew {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+    min-width: 100%;
+    min-height: 100%
+}
+
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #225470;
+    z-index: 1;
+    opacity: 0.55;
+}
+
+.header-content {
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.myButton {
+    background: #34b3a0;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-b {
+    margin-top: 50px;
+    background: #333;
+    color: #fff;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 10px;
+    /* Place the button at the bottom of the page */
+    right: 15px;
+    /* Place the button 30px from the right */
+    z-index: 98;
+    /* Make sure it does not overlap */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 2px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    border-color: rgba(255, 255, 255, 0);
+    background: none;
+}
+
+#logIn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.loginmodal-container {
+    color: white;
+
+}
+
+modal-dialog {
+    color: white;
+}
+
+
+.ninjaContainer {
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    /*    margin: auto;*/
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.leftNinja {
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.ninjaP {
+    justify-content: center;
+    margin: 15px;
+}
+
+footer {
+    padding: 50px;
+}
+
+footer ul li {
+    text-align: left;
+}
+
+footer p {
+    text-align: justify;
+}
+
+footer h6 {
+    text-align: left;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.75;
+}
+
+.Lecture-images {
+padding-left: 50px;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Lecture-images div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 90px;
+
+}
+
+.Lecture-images img {
+    width: 80%;
+    height: auto;
+}
+
+.sectionContainer {
+    margin-top: 100px;
+}
+
+.kartichka {
+    width: 800px;
+    height: 500px;
+    border: solid black;
+}
+
+
+/* --------------------------------------
+Media Queries
+-------------------------------------- */
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575px) {}
+
+/*// Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/*// Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {}

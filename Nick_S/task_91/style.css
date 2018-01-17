@@ -1,0 +1,169 @@
+/* HINT: Use just A Colour Picker to get the colors */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f4ffff;
+	font-size: 0.7em; 
+}
+
+#bodito:target {
+	background-color: #b9b9e5;
+}
+
+a {
+	text-decoration: none;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+	border-radius: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.circle:hover {
+	background-color: #898989;
+}
+
+p {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: white;
+	margin: 8px;
+}
+
+.xs-only,
+.sm-only,
+.md-only,
+.lg-only {
+	width: 220px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 4px;
+}
+
+.sm-only,
+.md-only,
+.lg-only {
+	display: none;
+}
+
+@media screen and (max-width: 459px) {
+	.firstline::before {
+		content: "small"
+	}
+	.secondline::after {
+		content: "460px max"
+	}
+	.xs-only {
+		display: flex;
+	}
+	.circle {
+		background-color: #7e841f;
+	}
+	body {
+		background-color: #f7f0e6;
+		width: 460px;
+		height: 800px;
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+@media screen and (min-width: 460px)and (max-width: 679px) {
+	.sm-only {
+		display: flex;
+		position: relative;
+		right: 50px;
+	}
+	.circle {
+		background-color: #7493e9;
+	}
+	body {
+		background-color: #e37e54;
+		width: 679px;
+		height: 800px;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.sm-only .firstline::before {
+		content: "medium"
+	}
+	.sm-only .secondline::after {
+		content: "460-670px"
+	}
+}
+
+@media screen and (min-width: 680px) and (max-width: 1299px) {
+	.md-only {
+		display: flex;
+		position: relative;
+		right: 50px;
+	}
+	.circle {
+		background-color: #548a30;
+	}
+	body {
+		background-color: #fdf8dd;
+		width: 1300px;
+		height: 800px;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.md-only .firstline::before {
+		content: "Large"
+	}
+	.md-only .secondline::after {
+		content: "670-1300px"
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	
+	.lg-only {
+		display: flex;
+		position: relative;
+		right: 50px;
+	}
+	.circle {
+		background-color: #dc4da8;
+	}
+	body {
+		background-color: #f4ffff;
+		width: 1800px;
+		height: 800px;
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.lg-only .firstline::before {
+		content: "Extra large"; 
+	}
+	.lg-only .secondline::after {
+		content: "1300px Plus";
+	}
+	

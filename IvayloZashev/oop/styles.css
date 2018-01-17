@@ -1,0 +1,18 @@
+.site-nav {
+    margin-bottom: 0;
+}
+
+nav:first-child {
+    background-color: darkseagreen;
+}
+
+footer {
+    background-color: darkslategray;
+}
+
+.image-container {
+    min-height: 600px;
+    background-image: url(img/bike.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%
+}

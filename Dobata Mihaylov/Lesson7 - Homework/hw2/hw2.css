@@ -1,0 +1,183 @@
+*{
+	box-sizing: border-box;
+}
+
+body , html {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	display: flex;
+	padding: 20px;
+	align-items: center;
+}
+
+header div{
+	flex-grow: 1;
+}
+
+header ul{
+	display: flex;
+}
+
+header ul li {
+	list-style-type: none;
+	margin: 10px;
+	font-size: 1.1em;	
+	border-bottom: 1px solid ;
+}
+
+header ul a{
+	text-decoration: none;
+	color: #484444;
+}
+
+header img{
+	display: none;
+}
+
+li , h1 , p {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+section{
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	background-image: url("header-bg.jpg");
+	background-size: cover;
+	background-color: grey;
+	background-position: bottom center;
+	height: 65vh;
+	min-height: 40vh;
+	padding: 20px;
+	padding-top: 50px;
+}
+
+
+#container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 150px;
+	background-color: white;
+	border: 10px solid #F0F0F0;
+	padding:0 70px;
+}
+
+#container h1 ,#container p{
+	text-align: center;
+}
+
+
+
+
+footer{
+	display: flex;
+	width: 100%;
+	background-color: black;
+	color: #484444;
+	justify-content: center;
+	flex-direction: column;
+	padding:10px;
+}
+
+footer p{
+	text-align: center;
+}
+
+footer ul{
+	display: flex;
+	justify-content: center;
+}
+
+footer ul a{
+	text-decoration: none;
+	color: #484444;
+}
+
+footer ul li{
+	list-style-type: none;
+	margin: 20px;
+
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+}
+
+nav ul a {
+	text-decoration: none;
+}
+
+nav ul li{
+	list-style-type: none;
+	margin: 20px;
+	color:#484444;
+}
+
+#pics{
+	display: flex;
+	padding-left: 200px;
+	padding-right: 200px;
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+img{
+	padding: 10px;
+	padding-top: 0;
+}
+
+
+
+@media (max-width: 1550px){
+	#pics{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+
+@media (max-width: 900px){
+header{
+	flex-direction: column;
+}
+
+header img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+
+header h1{
+	width: 100%;
+	text-align: left;
+}
+
+
+header ul{
+	flex-direction: column;	
+}
+
+header ul li{
+	width: 100vh;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 0 solid ;
+	box-shadow: 0 1px ;
+}
+
+header div{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+#flex-header {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item1 {
+    margin: auto 10px;
+}
+
+.flex-item2 {
+    height: 30px;
+    margin: auto 10px;
+}

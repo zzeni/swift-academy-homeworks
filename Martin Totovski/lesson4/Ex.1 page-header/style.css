@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+header{
+    margin: 30px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.table {
+    width: 100vw;
+}
+
+#my_avatar_image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #C6C8CA;
+}
+
+.list-group-item {
+    height: 110px;
+    padding: 5px;
+}
+
+th {
+    color: #C6C8CA;
+}

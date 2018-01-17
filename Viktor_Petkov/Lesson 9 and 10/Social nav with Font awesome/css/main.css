@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #526770;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+
+    background-color: #666666;
+    width: 400px;
+    height: 120px;
+    border: solid black
+}
+
+header h1 {
+    color: white;
+    margin: 0px;
+    padding: 10px
+}
+
+header p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 10px;
+    position: relative;
+    top: -10px;
+}
+
+nav {
+    margin-top:10px;
+    display: flex;
+    background:#FFFFFF;
+    flex-direction: column;
+    width: 400px;
+}

@@ -1,0 +1,34 @@
+body {
+    font-size: 18px;
+    padding: 30px;
+}
+
+.generateData {
+    padding: 10px 30px;
+    color: #FAF8ED;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.flexedDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moviesImage {
+    background-color: #1D5765;
+}
+
+.card-text {
+    background-color: #4F93A8;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.parentDiv {
+    background-color: #0D2F38;
+    color: aliceblue;
+    padding: 10px;
+}

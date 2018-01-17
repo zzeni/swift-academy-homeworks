@@ -1,0 +1,81 @@
+/* HINT: Use just A Colour Picker to get the colors */
+
+.circle {
+  font-family: fantasy, cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+
+}
+
+@media (max-width: 459px) {
+  body {
+    background-color: #FAF0E6;
+  }
+
+  .circle {
+    background-color: #7C8500;
+  }
+  .sm-only,
+  .md-only,
+  .lg-only {
+    display: none;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 679px) {
+  body {
+    background-color: #EF875E;
+  }
+
+  .circle {
+    background-color: #699BEA;
+
+
+
+  }
+
+  .xs-only,
+  .md-only,
+  .lg-only {
+    display: none;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 999px) {
+  body {
+    background-color: #FFF7DD;
+  }
+
+  .circle {
+    background-color: #4A8422;
+
+  }
+
+  .xs-only,
+  .sm-only,
+  .lg-only {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-color: #F3FEFF;
+  }
+
+  .circle {
+    background-color: #E84D98;
+
+  }
+
+  .xs-only,
+  .sm-only,
+  .md-only {
+    display: none;
+  }
+}

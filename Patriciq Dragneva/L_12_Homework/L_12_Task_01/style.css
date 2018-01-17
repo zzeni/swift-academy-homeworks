@@ -1,0 +1,63 @@
+body {
+    margin-top: 15vh;
+}
+
+.panel-login {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 0;
+}
+
+form .form-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .form-flex label {
+    width: 100px;
+}
+
+.panel-login .tab-content .tab-pane {
+    padding: 1em;
+    background-color: #fff;
+}
+
+
+form div .customized {
+    width: 50%;
+}
+
+#text-id {
+    resize: none;
+}
+
+
+.dropdown {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-warning {
+    position: relative;
+    left: 40%;
+    bottom: -50px;
+}
+
+.fa-chevron-up {
+
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    color: #31B0D5;
+}
+
+footer {
+    text-align: center;
+}

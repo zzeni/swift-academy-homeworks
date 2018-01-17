@@ -1,0 +1,12 @@
+
+    body{
+background-color:orange;
+    }
+    @media (min-width: 650px) {
+    }
+    body{
+        background-color:blue;
+            }
+    @media (max-width: 800px) {
+        
+        }

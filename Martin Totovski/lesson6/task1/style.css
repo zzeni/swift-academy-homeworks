@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+h1{
+    padding: 10px;
+    margin-left: 50px;
+}
+form > div{
+    padding: 10px;
+}
+
+form label {
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+}
+
+textarea{
+    resize: none;
+    width: 300px;
+    height: 100px;
+    vertical-align: top;
+}
+.bottom-buttons{
+    display: inline;
+}

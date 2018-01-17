@@ -1,0 +1,8 @@
+.container, .sub {
+    width: 400px;
+}
+
+.sub {
+    display: flex;
+    justify-content: space-between;
+}
