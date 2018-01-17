@@ -259,7 +259,6 @@ object:hover {
 
 .d-block {
     max-height: 70vh;
-    /*    width: auto;*/
     background-color: #bebecb;
 }
 
@@ -282,26 +281,10 @@ object:hover {
     }
 }
 
-.carousel-inner {
-    display: flex;
-    background-color: rgb(157, 157, 157);
-    justify-content: space-around;
-    align-items: center;
-}
-
-.d-block {
-    max-height: 70vh;
-    width: auto;
-    background-color: #bebecb;
-}
-
-
-
-
-
 /* 576x460 NAGORE*/
 
 @media (max-width: 768px) {
+    
     .viewport {
         -webkit-transform: scale(0.55, 0.55);
         -moz-transform: scale(0.55, 0.55);

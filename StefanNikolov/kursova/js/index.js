@@ -1,5 +1,5 @@
 /*globals document, window, $ */
-//(function () {
+(function () {
 "use strict";
 
 //-------------------CUBE---------------
@@ -361,8 +361,6 @@ $(document).ready(function () {
     $(".modalloader").load("./html/modal.html");
 });
 
-
-
 function fetch(partialName) {
     var template = "./html/%PARTIAL%.html".replace("%PARTIAL%", partialName);
 
@@ -382,68 +380,13 @@ $("a[data-click='contactme']").on("click", function () {
     fetch("contactme");
 });
 
-$("a[data-click='products']").on("click", function () {
-    fetch("products");
+$("a[data-click='myproducts']").on("click", function () {
+    fetch("myproducts");
 });
+
 
 //-----------------------game---------------
 
-
-
-$(".moveBottom").on("click", function(){
-    var currDiv = $(".sexyDiv");
-    if (currDiv.hasClass("bb")) {
-  currDiv.classList.add("error");
-} else {
-var kletka = currDiv.attr("data-cell") *1;  
-//    console.log(kletka);
-var sledvashtaKletka = $("div[data-cell='" + (kletka + 6) + "']");
-//console.log(sledvashtaKletka);
-currDiv.removeClass("sexyDiv");
-sledvashtaKletka.addClass("sexyDiv");
-}  
-});
     
-$(".moveRight").on("click", function(){
-    var currDiv = $(".sexyDiv");
-    if (currDiv.hasClass("rb")) {
-  currDiv.classList.add("error");
-} else {
-var kletka = currDiv.attr("data-cell") *1;  
-//    console.log(kletka);
-var sledvashtaKletka = $("div[data-cell='" + (kletka + 1) + "']");
-//console.log(sledvashtaKletka);
-currDiv.removeClass("sexyDiv");
-sledvashtaKletka.addClass("sexyDiv");
-}  
-});
-
-$(".moveLeft").on("click", function(){
-    var currDiv = $(".sexyDiv");
-    if (currDiv.hasClass("lb")) {
-  currDiv.classList.add("error");
-} else {
-var kletka = currDiv.attr("data-cell") *1;  
-//    console.log(kletka);
-var sledvashtaKletka = $("div[data-cell='" + (kletka - 1) + "']");
-//console.log(sledvashtaKletka);
-currDiv.removeClass("sexyDiv");
-sledvashtaKletka.addClass("sexyDiv");
-}  
-});
-    
-$(".moveTop").on("click", function(){
-    var currDiv = $(".sexyDiv");
-    if (currDiv.hasClass("tb")) {
-  currDiv.classList.add("error");
-} else {
-var kletka = currDiv.attr("data-cell") *1;  
-//    console.log(kletka);
-var sledvashtaKletka = $("div[data-cell='" + (kletka - 6) + "']");
-//console.log(sledvashtaKletka);
-currDiv.removeClass("sexyDiv");
-sledvashtaKletka.addClass("sexyDiv");
-}  
-});
-
+})();
 
