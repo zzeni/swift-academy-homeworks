@@ -343,7 +343,7 @@ Cube.prototype.sideChange = function () {
         this.sides[i].getElementsByClassName('cube-image')[0].className = 'cube-image';
     }
 
-    this.sides[this.viewport.currentSide - 1].getElementsByClassName('cube-image')[0].className = 'cube-image active';
+    this.sides[this.viewport.currentSide - 1].getElementsByClassName('cube-image')[0].className = 'cube-image activeDiv';
 
 };
 
@@ -358,7 +358,7 @@ new Cube({
 
 
 $(document).ready(function () {
-    $(".modalloader").load("./html/aboutme_modal.html");
+    $(".modalloader").load("./html/modal.html");
 });
 
 
@@ -374,7 +374,76 @@ function fetch(partialName) {
         });
     }, 50);
 }
-
-$("a[data-click='aboutme']").on("click", function () {
-    fetch("carousel");
+$("a[data-click='mygame']").on("click", function () {
+    fetch("mygame");
 });
+
+$("a[data-click='contactme']").on("click", function () {
+    fetch("contactme");
+});
+
+$("a[data-click='products']").on("click", function () {
+    fetch("products");
+});
+
+//-----------------------game---------------
+
+
+
+$(".moveBottom").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("bb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka + 6) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+    
+$(".moveRight").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("rb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka + 1) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+
+$(".moveLeft").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("lb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka - 1) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+    
+$(".moveTop").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("tb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka - 6) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+
+

@@ -109,11 +109,11 @@ body {
     transition: color 600ms;
 }
 
-.cube > div > div.cube-image> a {
+.cube > div > div.cube-image > a {
     color: lightgrey;
 }
 
-.cube > div > div.cube-image.active>a {
+.cube > div > div.cube-image.activeDiv > a {
     color: black;
 }
 
@@ -121,7 +121,7 @@ body {
     cursor: pointer;
 }
 
-.cube > div:active {
+.cube > div:activeDiv {
     cursor: pointer;
 }
 
@@ -187,81 +187,192 @@ object:hover {
     opacity: 1;
 }
 
-/* 576x460 NAGORE*/
-@media (max-width: 575px) {
-.viewport {
-        -webkit-transform: scale(0.55, 0.55);
-        -moz-transform: scale(0.55, 0.55);
-        -ms-transform: scale(0.55, 0.55);
-        -o-transform: scale(0.55, 0.55);
-        transform: scale(0.55, 0.55);
-    }
-.cube {
-    top: calc(100vh/1.55);}
-body {
-    background-position: center calc(100%/2.9);
-    background-size: auto 700px;}
+
+
+.labirint {
+    width: 420px;
+    height: 420px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    width: 70px;
+    height: 70px;
+    background-color: beige;
+}
+
+.lb {
+    border-left: 2px solid black;
+}
+
+.rb {
+    border-right: 2px solid black;
+}
+
+.tb {
+    border-top: 2px solid black;
+}
+
+.bb {
+    border-bottom: 2px solid black;
+}
+
+.sexyDiv {
+    background-image: url("/img/game_ball.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.divControls {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.control {
+    width: 50px;
+    height: 50px;
+}
+
+.firsLineCntrl,
+.secondLineCntrl,
+.thirdLineCntrl {
+    display: flex;
+    justify-content: center;
+}
+
+.secondLineCntrl {
+    justify-content: space-between;
+}
+
+
+.carousel-inner {
+    background-color: rgb(157, 157, 157);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-block {
+    max-height: 70vh;
+    /*    width: auto;*/
+    background-color: #bebecb;
 }
 
 /* 576x460 NAGORE*/
-@media (max-width: 768px) {
-.viewport {
+
+@media (max-width: 575px) {
+    .viewport {
         -webkit-transform: scale(0.55, 0.55);
         -moz-transform: scale(0.55, 0.55);
         -ms-transform: scale(0.55, 0.55);
         -o-transform: scale(0.55, 0.55);
         transform: scale(0.55, 0.55);
     }
-.cube {
-    top: calc(100vh/1.55);}
-body {
-    background-position: center calc(100%/2.9);
-    background-size: auto 700px;}
+    .cube {
+        top: calc(100vh/1.55);
+    }
+    body {
+        background-position: center calc(100%/2.9);
+        background-size: auto 700px;
+    }
+}
+
+.carousel-inner {
+    display: flex;
+    background-color: rgb(157, 157, 157);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.d-block {
+    max-height: 70vh;
+    width: auto;
+    background-color: #bebecb;
+}
+
+
+
+
+
+/* 576x460 NAGORE*/
+
+@media (max-width: 768px) {
+    .viewport {
+        -webkit-transform: scale(0.55, 0.55);
+        -moz-transform: scale(0.55, 0.55);
+        -ms-transform: scale(0.55, 0.55);
+        -o-transform: scale(0.55, 0.55);
+        transform: scale(0.55, 0.55);
+    }
+    .cube {
+        top: calc(100vh/1.55);
+    }
+    body {
+        background-position: center calc(100%/2.9);
+        background-size: auto 700px;
+    }
 }
 
 /*Medium devices (tablets, 768px and up) 768x480 NAGORE*/
-@media (min-width: 768px) {.viewport {
+
+@media (min-width: 768px) {
+    .viewport {
         -webkit-transform: scale(0.7, 0.7);
         -moz-transform: scale(0.7, 0.7);
         -ms-transform: scale(0.7, 0.7);
         -o-transform: scale(0.7, 0.7);
         transform: scale(0.7, 0.7);
     }
-.cube {
-    top: calc(100vh/2.0);}
-body {
-    background-position: center calc(100%/2.1);
-    background-size: auto 1000px;}
+    .cube {
+        top: calc(100vh/2.0);
+    }
+    body {
+        background-position: center calc(100%/2.1);
+        background-size: auto 1000px;
+    }
 }
 
 /*Large devices (desktops, 992px and up) 992x560 NAGORE */
-@media (min-width: 992px) {.viewport {
+
+@media (min-width: 992px) {
+    .viewport {
         -webkit-transform: scale(0.7, 0.7);
         -moz-transform: scale(0.7, 0.7);
         -ms-transform: scale(0.7, 0.7);
         -o-transform: scale(0.7, 0.7);
         transform: scale(0.7, 0.7);
     }
-.cube {
-    top: calc(100vh/1.8);}
-body {
-    background-position: center calc(100%/2.5);
-    background-size: auto 900px;}
+    .cube {
+        top: calc(100vh/1.8);
+    }
+    body {
+        background-position: center calc(100%/2.5);
+        background-size: auto 900px;
+    }
 }
 
 
 
 /* Extra large devices (large desktops, 1200px and up) 1200x780 NAGORE */
-@media (min-width: 1200px) {.viewport {
+
+@media (min-width: 1200px) {
+    .viewport {
         -webkit-transform: scale(0.8, 0.8);
         -moz-transform: scale(0.8, 0.8);
         -ms-transform: scale(0.8, 0.8);
         -o-transform: scale(0.8, 0.8);
         transform: scale(0.8, 0.8);
     }
-.cube {
-    top: calc(100vh/1.97);}
-body {
-    background-position: center calc(100%/2.45);
-    background-size: auto 1100px;}
+    .cube {
+        top: calc(100vh/1.97);
+    }
+    body {
+        background-position: center calc(100%/2.45);
+        background-size: auto 1100px;
+    }
 }

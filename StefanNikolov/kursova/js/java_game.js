@@ -1,30 +1,77 @@
-/*global document*/
-(function () {
-    "use strict";
-    var buttonB = document.querrySelector(".moveBottom");
+/*globals document, $*/
+//(function () {
+//    "use strict";
+
+  
+//var classList = $('.sexyDiv').attr('class').split(/\s+/);
+//$.each(classList, function(index, item) {
+//    if (item === 'bb') {
+//    }
+//});
+
+//var currDiv = $(".sexyDiv");
+$(".moveBottom").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("bb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka + 6) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+    
+$(".moveRight").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("rb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka + 1) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+
+$(".moveLeft").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("lb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka - 1) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+    
+$(".moveTop").on("click", function(){
+    var currDiv = $(".sexyDiv");
+    if (currDiv.hasClass("tb")) {
+  currDiv.classList.add("error");
+} else {
+var kletka = currDiv.attr("data-cell") *1;  
+//    console.log(kletka);
+var sledvashtaKletka = $("div[data-cell='" + (kletka - 6) + "']");
+//console.log(sledvashtaKletka);
+currDiv.removeClass("sexyDiv");
+sledvashtaKletka.addClass("sexyDiv");
+}  
+});
+    
+    
 
 
-    buttonB.addEventListener("click", function () {
-        if (document.querrySelector(".active") !== document.querrySelector(".bb")) {
-            // ако в див-а с клас .active няма клас .bb
-                    var currDiv = document.querrySelector(".active");     
-            //взимам текущия див
-                    var currId = currDiv.getAttribute('id').split("_")[1];
-            //взимам индекса на id-то на текущия див
-                    currDiv.classList.toggle(".active");
-            //сменям класа .active на текущия див
-             currId= currId*1 + 6;
-                    document.getElementById("cell_"+ currId).classList.toggle(".active"); 
-            //задававам нов див с клас .active по нов id индекс
-        }
-    });
 
 
 
 
 
-
-
-
-
-})();
+//})();
