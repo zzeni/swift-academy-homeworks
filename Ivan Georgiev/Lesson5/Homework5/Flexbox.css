@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+#container1 {
+    display: flex;
+    height: 200px;
+}
+
+.yellow {
+    background-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.green {
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+#container2 {
+    display: flex;
+    height: 400px;
+}
+
+.red {
+    display: flex;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.blue {
+    flex-grow: 1;
+}
+
+.blue1, .blue2 {
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    height: 180px;
+}
+
+.blue2 {
+    margin-top: 20px;
+}

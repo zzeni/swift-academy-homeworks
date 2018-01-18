@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF0E6;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+
+#main-page:target {
+    background-color: lawngreen;
+}
+
+.circle {
+    background-color: #7C8500;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sm-only,
+.md-only,
+.lg-only {
+    display: none;
+}
+
+.xs-only::before {
+    content: "Small";
+    font-size: 2em;
+    margin: 80px;
+}
+
+.xs-only::after {
+    content: " < 460px";
+    font-size: 1em;
+}
+
+.circle:hover {
+    background-color: #24aecd;
+}
+
+
+@media (min-width: 460px) {
+    .xs-only {
+        display: none;
+    }
+
+    .sm-only {
+        display: block;
+    }
+
+    .sm-only::before {
+        content: "Medium";
+        font-size: 2em;
+        margin: 80px;
+    }
+
+    .sm-only::after {
+        content: " 460px - 679px";
+        font-size: 1em;
+    }
+
+    .circle {
+        background-color: #618DF0;
+    }
+
+    body {
+        background-color: #FF733A;
+    }
+}
+
+@media (min-width: 670px) {
+    .sm-only {
+        display: none;
+    }
+
+    .md-only {
+        display: block;
+    }
+
+    .md-only::before {
+        content: "Large";
+        font-size: 2em;
+        margin: 80px;
+    }
+
+    .md-only::after {
+        content: " 680px - 999px";
+        font-size: 1em;
+    }
+
+    .circle {
+        background-color: #6C003D;
+    }
+
+    body {
+        background-color: #ECFFFF;
+    }
+}
+
+@media (min-width: 1000px) {
+    .md-only {
+        display: none;
+    }
+
+    .lg-only {
+        display: block;
+    }
+
+    .lg-only::before {
+        content: "Extra-large";
+        font-size: 2em;
+        margin: 10px;
+    }
+
+    .lg-only::after {
+        content: " > 1000px";
+        font-size: 1em;
+    }
+
+    .circle {
+        background-color: #009225;
+    }
+
+    body {
+        background-color: #FFFADB;
+    }
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  background-color: #FAF0E6;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  background-color: #7C8500;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy,cursive;
+    text-align: center;
+}
+/* pseudo elements homework start */
+div.xs-only p::before {
+    content: "Small";
+}
+div.xs-only p::after {
+    content: "460px";
+}
+div.sm-only p::before {
+    content: "Medium";
+}
+div.sm-only p::after {
+    content: "460px and 679px";
+}
+div.md-only p::before {
+    content: "Large";
+}
+div.md-only p::after {
+    content: "680px and 999px";
+}
+div.lg-only p::before {
+    content: "Extra-Large";
+}
+div.lg-only p::after {
+    content: ">1000px";
+}
+
+body:target {
+    background:gold;
+}
+a {
+    text-decoration: none;
+}
+.sm-only, .md-only, .lg-only {
+  display: none;
+}
+@media (max-width:460px) {
+  .xs-only{
+    color:white;
+  }
+    .circle:hover {
+        background: pink;
+    }
+}
+@media (min-width:460px) and (max-width:679px){
+  .xs-only {
+    display: none;
+  }
+  .sm-only {
+    display: initial;
+    color:white;
+  }
+    .circle:hover {
+        background: purple;
+    }
+  body {
+    background-color: #ff7f50;
+  }
+  .circle {
+    background-color: #6495ed;
+  }
+}
+@media (min-width:680px) and (max-width:999px) {
+  .sm-only , .xs-only{
+    display: none;
+  }
+  .md-only {
+    display: initial;
+    color: white;
+  }
+  body {
+    background-color: #fff8dc;
+  }
+  .circle {
+    background-color: #228b22;
+  }
+    .circle:hover {
+        background: pink;
+    }
+}
+@media (min-width:1000px) {
+  .sm-only , .xs-only , .md-only {
+    display: none;
+  }
+  .lg-only{
+    display: initial;
+    color: white;
+  }
+  body {
+    background-color: white;
+  }
+  .circle {
+    background-color: #ff1493;
+  }
+    .circle:hover {
+        background: green;
+    }
+}

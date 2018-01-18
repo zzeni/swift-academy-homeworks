@@ -1,0 +1,6 @@
+#flex-header {
+    display: flex;
+    justify-content: space-between;
+    background: orangered;
+    align-items: center;
+}

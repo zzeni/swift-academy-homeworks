@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    width: 100%;
+}
+
+.container {
+    border: 2px solid black;
+    width: 100%;
+    min-height: 600px;
+}
+
+.square {
+    color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+@media (max-width: 399px) {
+
+    body {
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .red {
+        width: 100px;
+        height: 100px;
+    }
+
+    .blue {
+        width: 100px;
+        height: 100px;
+    }
+    .green {
+        width: 100px;
+        height: 100px;
+    }
+    .black {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 400px) and (max-width:499px) {
+
+    body {
+        margin: 0;
+    }
+
+
+    .container {
+        position: relative;
+        width: 100vw;
+    }
+    .red {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    .blue {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .green {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .black {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .container {
+        display: flex;
+
+    }
+}
+
+@media (min-width:500px) and (max-width:599px) {
+
+    body {
+        margin: 0;
+    }
+
+
+    .container {
+        position: relative;
+        width: 100vw;
+    }
+
+    .red {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        left: 0px;
+
+    }
+
+    .blue {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .green {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        right: 0px;
+    }
+
+    .black {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+}
+
+
+@media (min-width:600px) and (max-width:699px) {
+    body {
+        margin: 0;
+    }
+
+
+    .container {
+        position: relative;
+        width: 100vw;
+    }
+
+    .red {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        left: 0px;
+
+    }
+
+    .blue {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .green {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .black {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        right: 0px;
+    }
+
+}
+
+@media (min-width:700px) and (max-width:799px) {
+    body {
+        margin: 0;
+    }
+
+
+    .container {
+        position: relative;
+        width: 100vw;
+    }
+
+    .red {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        right: 0px;
+
+    }
+
+    .blue {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .green {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .black {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@media (min-width:800px) {
+
+
+    body {
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    .red {
+        height: 100px;
+        width: 300px;
+    }
+
+    .blue {
+        height: 100px;
+        width: 300px;
+    }
+    .green {
+        height: 100px;
+        width: 300px;
+    }
+    .black {
+        height: 100px;
+        width: 300px;
+    }
+}

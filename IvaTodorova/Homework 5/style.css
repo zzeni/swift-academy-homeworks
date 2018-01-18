@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    font-family: Fantasy;
+    font-size: 1.2em;
+
+}
+
+
+
+body {
+
+    background-color: #232323;
+    margin: auto;
+    height: 500px;
+}
+
+#yellow {
+    background-color: #EFDD6F;
+
+}
+
+#red {
+    background-color: #D56B6B;
+
+}
+
+#blue1,
+#blue2 {
+    background-color: #50B1C3;
+
+}
+
+#green {
+    background-color: #72DE6B;
+
+}
+
+.flex-item {
+    padding: 5px;
+
+    margin: 5px;
+    color: white;
+
+}
+
+#flex-body {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+    height: 500px;
+
+
+}
+
+#flex-top {
+    display: flex;
+    height: 50%;
+
+}
+
+
+
+#yellow,
+#green {
+    flex: 1;
+
+}
+
+#flex-bottom {
+    display: flex;
+    height: 50%;
+}
+
+#red {
+    width: 60%;
+
+}
+
+#flex-bottom-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+#blue1,
+#blue2 {
+    flex: 1;
+
+}
+
+p {
+    text-align: center;
+
+}
+
+@media (max-width: 600px) {
+
+    body {
+
+    background-color: #232323;
+    width: 100%; 
+}
+    
+    
+    #flex-body {
+    display: flex;
+    flex-direction: column;
+   width: 100%;
+
+}
+    #flex-top {
+    display: flex;
+    height: 30%;
+        }
+    #flex-bottom {
+
+        display: flex;
+        height: 70%;
+        flex-direction: column;
+    }
+
+    #red {
+
+        width: 100%;
+
+    }
+
+    #flex-bottom-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #blue1,
+    #blue2 {
+        flex: 1;
+
+    }
+
+
+
+}

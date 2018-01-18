@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+}
+
+section {
+    margin: 30px 10px;
+}
+
+header {
+    background-color: #777;
+    color: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 5px;
+    width: 400px;
+}
+
+.container-fa header {
+    text-align: right;
+}
+
+header h1,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: -35px;
+    list-style: none;
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.container-fa ul li {
+    justify-content: flex-end;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+}
+
+ul li a span {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.container-fa ul li a span {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.facebook {
+    background: url(https://swift-academy.zenlabs.pro/misc/tasks/lesson10/social-media.jpg);
+    background-position: -8px -5px;
+    background-size: 310px;
+}
+
+.google {
+    background: url(https://swift-academy.zenlabs.pro/misc/tasks/lesson10/social-media.jpg);
+    background-position: -70px -5px;
+    background-size: 310px;
+}
+
+.instagram {
+    background: url(https://swift-academy.zenlabs.pro/misc/tasks/lesson10/social-media.jpg);
+    background-position: -131px -5px;
+    background-size: 310px;
+}
+
+.pinterest {
+    background: url(https://swift-academy.zenlabs.pro/misc/tasks/lesson10/social-media.jpg);
+    background-position: -191px -5px;
+    background-size: 310px;
+}
+
+.twitter {
+    background: url(https://swift-academy.zenlabs.pro/misc/tasks/lesson10/social-media.jpg);
+    background-position: -252px -5px;
+    background-size: 310px;
+}
+
+.container-fa .round {
+    color: #fafafa;
+    background-color: #555;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

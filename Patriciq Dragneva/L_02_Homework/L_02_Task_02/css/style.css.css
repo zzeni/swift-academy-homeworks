@@ -1,0 +1,50 @@
+header {
+    text-align: center;
+}
+
+body {
+    background-color: #343d46;
+}
+
+h1 {
+    color: white;
+}
+
+section {
+    background-color: #c0c5ce;
+    padding: 40px;
+    margin: 20px;
+    width: 1390px;
+}
+
+article {
+    background-color: #a7adba;
+}
+
+img {
+    padding: 20px;
+}
+
+div{
+    background-color: #a7adba;
+    padding: 10px;
+    margin: 10px;
+    
+}
+nav {
+    background-color: #a7adba;
+    padding: 5px;
+    margin: 10px;
+}
+
+div{
+    background-color:#4f5b66;
+    padding: 5px;
+    margin: 10px;
+}
+footer {
+    background-color: #a7adba;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}

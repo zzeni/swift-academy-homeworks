@@ -1,0 +1,15 @@
+p {
+  background-color: darkgrey  
+}
+section {
+    background-color: whitesmoke
+}
+footer {
+    background-color: darkseagreen;
+    text-align: center
+}
+ul, li {
+    text-align: center;
+    display: inline-block;
+    font-size: 100%
+}

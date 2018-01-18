@@ -1,0 +1,46 @@
+body{
+background-color: peachpuff;
+}
+nav a {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 125px;
+    display: inline-block;
+}
+section {
+    margin: 10px;
+    padding: 10px;
+    background-color:lightsteelblue;
+        color: white;
+}
+.top-link {
+    text-decoration: none;
+}
+
+.top-link::before {
+    content: "\2191";
+}
+
+.me {
+    background-color: yellow;
+}
+
+.history {
+    background-color: lightblue;
+}
+
+.projects {
+    background-color: darkgrey;
+}
+
+.contacts {
+    background-color: darkviolet;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column align-items-center">
+        <h3>Свържете се с нас!</h3>
+
+        <hr>
+
+        <form class="col-12 col-sm-10 col-md-8 col-lg-6">
+            <div class="form-group row">
+                <label class="col-form-label col-sm-4" for="user-name">Име</label>
+                <div class="input-group col-sm-8">
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" id="user-name" placeholder="Име">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-4" for="user-surname">Фамилия</label>
+                <div class="input-group col-sm-8">
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" id="user-surname" placeholder="Фамилия">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-4" for="email">E-mail</label>
+                <div class="input-group col-sm-8">
+                    <span class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail address">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-4" for="number">Телефон #</label>
+                <div class="input-group col-sm-8">
+                    <span class="input-group-addon">
+                        <i class="fa fa-phone"></i>
+                    </span>
+                    <input type="tel" class="form-control" id="number" placeholder="+359 88 555 5555">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-12  col-sm-4" for="message">Съобщение</label>
+                <div class="input-group col-12 col-sm-8">
+                    <span class="input-group-addon">
+                        <i class="fa fa-pencil"></i>
+                    </span>
+                    <textarea class="form-control" rows="3" placeholder="Съобщение" id="message"></textarea>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-warning btn-fluid col-sm-4 col-md-3">
+                Изпрати
+                <i class="fa fa-paper-plane"></i>
+            </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

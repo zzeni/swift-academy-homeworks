@@ -1,0 +1,129 @@
+body {
+    background-color: #F8EFE6;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    background-color: #7C7713;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xs-only {
+    font-family: cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.xs-only > p {
+    margin: 15px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.xs-only > small {
+    font-size: 1.1em;
+}
+
+.sm-only,
+.md-only,
+.lg-only {
+    display: none;
+}
+
+@media (min-width: 460px) {
+    body {
+        background-color: #EF875E;
+    }
+    .circle {
+        background-color: #689AE7;
+    }
+    .xs-only,
+    .md-only,
+    .lg-only {
+        display: none;
+    }
+    .sm-only {
+        font-family: cursive;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sm-only > p {
+        margin: 15px;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    .sm-only > small {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 680px) {
+    body {
+        background-color: #FEF6DD;
+    }
+    .circle {
+        background-color: #447E20;
+    }
+    .xs-only,
+    .sm-only,
+    .lg-only {
+        display: none;
+    }
+    .md-only {
+        font-family: cursive;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .md-only > p {
+        margin: 15px;
+        font-size: 2.1em;
+        text-transform: uppercase;
+    }
+    .md-only > small {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: #F2FDFD;
+    }
+    .circle {
+        background-color: #E84D96;
+    }
+    .xs-only,
+    .sm-only,
+    .md-only {
+        display: none;
+    }
+    .lg-only {
+        font-family: cursive;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lg-only > p {
+        margin: 15px;
+        font-size: 2em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .lg-only > small {
+        font-size: 1em;
+    }
+}

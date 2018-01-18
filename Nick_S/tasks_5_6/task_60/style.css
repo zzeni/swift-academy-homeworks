@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+	font-size: 1, 5em;
+}
+
+html {
+	height: 100%;
+}
+
+form > div {
+	padding: 10px;
+}
+
+form lable {
+	width: 120px;
+	display: inline-block;
+	text-align: right;
+}
+
+textarea {
+	vertical-align: top
+}

@@ -1,0 +1,10 @@
+body {
+    background-color: #eee;
+    padding: 15px 0;
+}
+
+
+hr {
+    width: 100%;
+    border-color: #ddd;
+}

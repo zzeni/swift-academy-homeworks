@@ -1,0 +1,170 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Viktor Petkov
+
+
+*/
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+#features {
+    text-align: center;
+}
+#features img {
+    margin: 0 0 20px;
+}
+
+#inputMessage {
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #333;
+    color: #eee;
+    font-size: 11px;
+    padding: 20px;
+}
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.well .page-header {
+    margin-top: 0px;
+}
+
+.well .page-header h1 {
+    margin-top: 0px;
+}
+
+ul.unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+    width: 200px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+    margin-top: 60px;
+}
+
+#myCarousel .item {
+    height: 400px;
+}
+
+.carousel-caption {
+    font-size: 24px;
+}
+
+.carousel-caption h4 {
+    font-size: 32px;
+}
+
+#slide1 {
+    background: url(../../images/Carousel_Medium01.jpg) top center no-repeat;
+
+}
+
+#slide2 {
+    background: url(../../images/Carousel_Medium02.jpg) top center no-repeat;
+
+}
+
+#slide3 {
+    background: url(../../images/Carousel_Medium03.jpg) top center no-repeat;
+
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+    margin-top: 20px;
+    display: none;
+}
+
+.well {
+    margin: 20px 0;
+}
+.tabbable img.thumbnail {
+margin: 0px 20px 10px 0px;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+
+@media (max-width: 480px) {}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {
+    #myCarousel .item {
+        height: 310px;
+    }
+    #slide1 {
+        background: url(../../images/Carousel_small01.jpg) top center no-repeat;
+
+    }
+    #slide2 {
+        background: url(../../images/Carousel_small02.jpg) top center no-repeat;
+
+    }
+
+    #slide3 {
+        background: url(../../images/Carousel_small03.jpg) top center no-repeat;
+
+    }
+    .carousel-caption {
+        font-size: 16px;
+    }
+    .carousel-caption h4 {
+        font-size: 24px;
+    }
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+    #myCarousel .item {
+        height: 500px;
+    }
+    #slide1 {
+        background: url(../../images/Carousel_large01.jpg) top center no-repeat;
+
+    }
+    #slide2 {
+        background: url(../../images/Carousel_large02.jpg) top center no-repeat;
+
+    }
+
+    #slide3 {
+        background: url(../../images/Carousel_large03.jpg) top center no-repeat;
+
+    }
+}

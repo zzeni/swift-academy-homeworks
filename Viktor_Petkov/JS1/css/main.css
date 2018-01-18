@@ -1,0 +1,31 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Viktor Petkov
+
+*/
+
+
+
+
+
+/* --------------------------------------
+Media Queries
+-------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    border: 2px solid black;
+    height: 100%;
+}
+
+.square {
+    color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+}
+
+/* Smallest first (<399px) */
+
+@media screen and (max-width: 399px) {
+    .square {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        margin: auto;
+    }
+}
+
+/* 400 - 499 */
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    .container {
+        position: relative;
+    }
+
+    div.square.red {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    div.square.blue {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    div.square.green {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    div.square.black {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+/* 500 - 599 */
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    div.square.blue {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    div.square.green {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    div.square.black {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    div.square.red {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+}
+
+/* 600 - 699 */
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+    div.square.blue {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    div.square.green {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    div.square.black {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    div.square.red {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+/* 700 - 799 */
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+    div.square.blue {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    div.square.green {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    div.square.black {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    div.square.red {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+/* > 800 */
+@media screen and (min-width: 800px) {
+    div.square {
+        display: inline-block;
+        width: 25%;
+        height: 200px;
+        margin-right: -4px;
+    }
+}

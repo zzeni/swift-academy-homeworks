@@ -1,0 +1,7 @@
+.par {
+    width: 500px;
+    margin: 50px;
+    background: url('1.jpg');
+    padding: 30px;
+    background-position: center;
+}
