@@ -1,0 +1,318 @@
+/*NORMALIZE*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    max-width: 100vw;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+/*RESPONSIVE*/
+
+/*
+@media screen (min-width: 320px) and (max-width: 767px){
+
+*/
+
+
+
+
+/*Standard*/
+nav {
+    position: relative;
+    background-image: url(images/bg-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 115px;
+}
+
+nav .logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 8px;
+}
+
+nav ul li a {
+    color: #9d9d9d;
+    line-height: 36px;
+    font-size: 22px;
+    display: block;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav ul li a:before {
+    border-top-color: #ec2028;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    right: -50px;
+    border-top: 5px solid transparent;
+    transition: .3s ease-out all;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+
+.first-section {
+    max-width: 100%;
+    background-image: url(images/bg01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.image-icon {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.containers-inside {
+    color: white;
+    background-color: rgba(11, 11, 11, 0.6);
+    text-align: center;
+    min-height: 150px;
+    flex-basis: 40%;
+    max-width: 40%;
+    position: relative;
+    padding: 15px;
+    margin-top: 25px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row h2 {
+    padding: 10px 0px 30px 10px;
+}
+
+.row p {
+    padding: 20px;
+}
+
+.red-line::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ec2028;
+    transition: .3s ease-out all;
+}
+
+.second-section {
+    max-width: 100%;
+    background-image: url(images/bto_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    position: relative;
+}
+
+.second-container {
+    max-width: 500px;
+    line-height: 1.5;
+    color: white;
+    margin-left: 80px;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.second-container h2 {
+    padding: 20px;
+    margin-left: -30px;
+}
+
+.second-container ul li {
+    list-style: circle;
+}
+
+.decoration {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.decoration::before {
+    top: -140px;
+    height: 160px;
+}
+
+.decoration::before,
+.decoration::after {
+    content: '';
+    position: absolute;
+    background-color: #d9d9d9;
+    width: 3px;
+    height: 100px;
+    left: 0;
+}
+
+.romb {
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.second-container img {
+    display: inline-block;
+    margin-left: -20px;
+}
+
+.btn-default {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 20px;
+    margin: 20px;
+}
+
+.btn-default a {
+    color: white;
+}
+
+.btn-default:hover {
+    color: black;
+    background-color: #AD424C;
+    border: 1px solid white;
+}
+
+.third-section {
+    max-width: 100%;
+    background-image: url(images/bg02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    position: relative;
+    color: white;
+}
+
+.third-section .img {
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+.image-wrap {
+    margin: 0 auto;
+    width: 263px;
+    height: 263px;
+    display: block;
+}
+
+.image-wrap .image {
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.image-wrap .image>img {
+    transform: rotate(-45deg) scale(1.5);
+}
+
+.container-with-images {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards {
+    flex-basis: 30%;
+    max-width: 30%;
+    text-align: center;
+}
+
+.image-wrap {
+    width: 100%;
+    height: auto;
+}
+
+.forth-section {
+    max-width: 100%;
+    background-image: url("https://greenscreenstock.com/wp-content/uploads/2017/02/Bad-Boy-Spraying-Graffiti-z1_008.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    position: relative;
+    color: white;
+}
+
+.forth-section img, .forth-section h2 {
+    margin: 15px;
+    padding: 15px;
+}
+
+.forth-section li {
+    padding-right: 15px;
+    line-height: 1.5;
+}
+
+
+.container-for-forth-section {
+    max-width: 50%;
+    text-align: right;
+}
+
+.btn-default-last:hover {
+    background-color: #125C3B;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn-default-last {
+    background-color: transparent;
+    padding: 15px;
+    margin: 15px;
+    color: white;
+}
+
+
+.btn-default-last a, .btn-default-last a:visited {
+    color: white;
+}
