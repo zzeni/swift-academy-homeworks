@@ -262,6 +262,51 @@ object:hover {
     background-color: #bebecb;
 }
 
+.main_main_div_th {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #c1c3c3;
+}
+
+.main_div_th {
+    width: 70vh;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.main_div_inside {
+    width: 33%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_in_mine {
+    width: 100%;
+    height: 100%;
+}
+
+.about_me_div {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e1e3e1;
+    text-align: justify;
+    margin: 3%;
+}
+.menu_pic_me{
+    width: 150px;
+    height: auto;
+}
+
+
+
 /* 576x460 NAGORE*/
 
 @media (max-width: 575px) {
@@ -279,12 +324,17 @@ object:hover {
         background-position: center calc(100%/2.9);
         background-size: auto 700px;
     }
+
+    .main_div_th {
+        width: 50vh;
+        height: 50vh;
+    }
 }
 
 /* 576x460 NAGORE*/
 
 @media (max-width: 768px) {
-    
+
     .viewport {
         -webkit-transform: scale(0.55, 0.55);
         -moz-transform: scale(0.55, 0.55);
